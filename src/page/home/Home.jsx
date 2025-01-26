@@ -40,14 +40,17 @@ const Home = () => {
           <h4 className='intro'>
           A party of teamwork and strategy!
           </h4>
-          <nav className="menu">
-            <a href="#">HOME</a>
-            <a className="active" href="#">EVENTS</a>
-            <a href="#">CONTACT</a>
-          </nav>
+          <div className="menu">
+  <a href="#about">ABOUT</a>
+  <a className="active" href="#event">EVENTS</a>
+  <a href="#">CONTACT</a>
+</div>
+
           <img className='amoungus' src={bg} alt="image" />
+        
           <p className='desc'>
           Join your crewmates to tackle challenges before the Impostor sabotages the event.<br></br> Complete tasks or risk being 'voted off'!
+          
           </p>
         </div>
       </div>

@@ -24,7 +24,7 @@
   
   .border {
     display: flex;
-    justify-content: center; /* Centering inner content */
+    justify-content: center; 
     align-items: center;
     width: 75%;
     height: 85%;

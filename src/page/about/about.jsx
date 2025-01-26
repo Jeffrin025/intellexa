@@ -14,6 +14,7 @@ const About = () => {
    
     <>
     <BG/>
+    <section id='about'>
         <div className="about-content">
             < img className='space' src={space}/>
             <div className='border'>
@@ -21,6 +22,7 @@ const About = () => {
                 <div className='border2'>
                 <div className="about-title">
               <h1 className='topic'>ABOUT US</h1>
+              
             </div>
                     <div >  
                     <h2 className='hed' >MISSION 01</h2> 
@@ -46,6 +48,7 @@ const About = () => {
             </div>
         
         </div>
+        </section>
         </>
   );
 };
