@@ -38,7 +38,7 @@ const Home = () => {
         <div className="content">
           <h1 className='heading'>INTELLEXA</h1>
           <h4 className='intro'>
-          A party of teamwork and strategy!
+          A party Has Been Reported!
           </h4>
           <div className="menu">
   <a href="#about">ABOUT</a>
@@ -49,7 +49,7 @@ const Home = () => {
           <img className='amoungus' src={bg} alt="image" />
         
           <p className='desc'>
-          Join your crewmates to tackle challenges before the Impostor sabotages the event.<br></br> Complete tasks or risk being 'voted off'!
+          Join your crewmates to tackle challenges before the Impostor sabotages the event. <br></br>Register for the event or risk being 'voted off'!"
           
           </p>
         </div>

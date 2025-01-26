@@ -27,7 +27,7 @@
     background-color: red;
     height: 65vh;
     width: 80vw;
-    border-radius: 25px; /* Increased for smoother curves */
+    border-radius: 50px; /* Increased for smoother curves */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Add slight shadow for depth */
 }
 .button{
@@ -54,7 +54,6 @@
                 0 8px 15px rgba(0, 0, 0, 0.3); 
 }
 .card{
-    
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -66,21 +65,36 @@
     
 }
 .cards{
-    position: relative;
-
-    transition: all 0.3s ease;
-    
+    position: relative; 
     margin-left: 20px;
     height: 9vh;
     width: 23vw;
     display: flex;
     border-radius: 10px;
 }
-.cards img {
-    height: 70px;
+.r1{
+    margin-top: 40px;
+}
+
+.hover-images {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    display: flex;
+    gap: 50px;
+  }
+  .tick-mark, .cross-mark {
+    height: 50px;
+    cursor: pointer;
   }
 
   
-.r1{
-    margin-top: 40px;
-} 
+  .tick-mark:hover {
+    opacity: 0.7;
+    transform: translateY(-20%) scale(1.1); 
+  }
+
+  .cross-mark:hover {
+    opacity: 0.7;
+    transform: translateY(-20%) scale(1.1); 
+  }

@@ -1,19 +1,20 @@
 import React from 'react';
+import { useParams } from 'react-router-dom'; // Import useParams
+import BG from './component/bg/bg';
 
-import BG from './component/bg/bg'
-
-import './b.css'
+import './b.css';
 
 const B = () => {
+  const { id } = useParams(); 
+
   return (
-   
     <>
-    <BG/>
-        <div className="b-content">
-          <h1>Welcome to the Home Page</h1>
-          <p>This is a simple home page with a cool animated background.</p>
-        </div>
-        </>
+      <BG />
+      <div className="b-content">
+        <h1>Event {id}</h1>
+        <p>Details for event {id}</p>
+      </div>
+    </>
   );
 };
 
