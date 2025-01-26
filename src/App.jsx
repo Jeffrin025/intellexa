@@ -6,6 +6,8 @@ import BG from './component/bg/bg'
 import Home from './page/home/Home'
 import Event from './page/event/Event'
 import B from './b'
+import Card from './component/card/Card'
+import About from './page/about/about'
 
 
 function App() {
@@ -14,7 +16,9 @@ function App() {
   return (
     <>
     <Home/>
-    <Event/>
+    <About/>
+    {/* <Card/> */}
+    {/* <Event/> */}
     <B/>
     </>
   )
