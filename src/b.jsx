@@ -1,6 +1,6 @@
 import React from 'react';
 
-import BG from './bg';
+import BG from './component/bg/bg'
 
 import './b.css'
 

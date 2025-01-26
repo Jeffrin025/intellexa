@@ -631,22 +631,22 @@ span {
   .content {
     font-family: 'InYourFace', sans-serif;
     opacity: 0;
-    /* Start hidden */
+  
     -webkit-animation: appear 1s ease-out forwards;
             animation: appear 1s ease-out forwards;
     -webkit-animation-delay: 9s;
             animation-delay: 9s;
-    /* Delay of 10 seconds before the div appears */
+ 
   }
   
   @-webkit-keyframes appear {
     0% {
       opacity: 0;
-      /* Start hidden */
+
     }
     100% {
       opacity: 1;
-      /* Fade in to visible */
+ 
     }
   }
   
@@ -677,7 +677,7 @@ span {
   }
 
   .intro{
-  letter-spacing: 0.8px;
+  letter-spacing: 0.5px;
     position: absolute;
     color:white;
     left: 0;

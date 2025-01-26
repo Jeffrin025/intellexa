@@ -1,10 +1,10 @@
 import React from 'react';
 
-import BG from './bg';
+import BG from '../../component/bg/bg'
 
-import './book.css'
+import './Event.css'
 
-const Book = () => {
+const Event = () => {
   return (
    
     <>
@@ -17,4 +17,4 @@ const Book = () => {
   );
 };
 
-export default Book;
+export default Event;

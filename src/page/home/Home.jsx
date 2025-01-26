@@ -1,10 +1,10 @@
 import React from 'react';
 
-import BG from './bg';
+import BG from '../../component/bg/bg'
 import './Home.css';
-import shh from './assets/shh.png';
-import bg from './assets/bg.png';
-import top from './assets/image.png';
+import shh from '../../assets/shh.png';
+import bg from '../../assets/bg.png';
+
 
 const Home = () => {
   return (
@@ -47,8 +47,7 @@ const Home = () => {
           </nav>
           <img className='amoungus' src={bg} alt="image" />
           <p className='desc'>
-          Join your crewmates on a mission to tackle tech and non-tech challenges before the Impostor sabotages the event. <br>
-          </br>Complete tasks together or risk being 'voted off'!
+          Join your crewmates to tackle challenges before the Impostor sabotages the event.<br></br> Complete tasks or risk being 'voted off'!
           </p>
         </div>
       </div>
