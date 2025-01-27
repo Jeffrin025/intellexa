@@ -45,11 +45,11 @@ const Card = () => {
           <div className="vote-bg">
             <p></p>
             <div className="phone-front">
-              <p>hiii</p>
+              <p></p>
               <div className="button">.</div>
               <div className="phone-screen">
-              <img src={tower} alt="Phone signal tower" className="ph-top"/>
-              <img src={battery} alt="Phone Battery" className="ph-top"/>
+              <img src={tower} alt="Phone signal tower" className="ph-top" style={{height:"90px"}}/>
+              <img src={battery} alt="Phone Battery" className="ph-top" />
                 <div className="card flex">
                   {Array.from({ length: 9 }, (_, index) => {
                     const cardClass = `cards white 0${index + 1}`;

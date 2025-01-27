@@ -63,6 +63,7 @@
 }
 .ph-top{
   position: absolute;
+  height: 20px;
 }
 .card{
   margin-top: 20px;
@@ -130,4 +131,65 @@
 .cross-mark:hover {
   opacity: 0.7;
   transform: translateY(-20%) scale(1.1); 
+}
+
+
+/* Tablet View */
+@media (max-width: 768px) {
+  .phone-front {
+    width: 85vw;
+    height: 70vh;
+  }
+
+  .phone-screen {
+    margin: 0 auto;
+    height: 80vh;
+    width: 90%;
+    padding: 20px;
+  }
+
+  .card {
+    justify-content: center;
+    flex-wrap: nowrap; /* Ensure one card per row */
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  .cards {
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+  }
+}
+
+/* Phone View */
+@media (max-width: 480px) {
+  .phone-front {
+    width: 95vw;
+    height: 475vh;
+  }
+
+  .phone-screen {
+    margin: 0 auto;
+    height: 85vh;
+    width: 95%;
+    padding: 15px;
+  }
+
+  .card {
+    justify-content: center;
+    flex-wrap: nowrap; /* Ensure one card per row */
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .cards {
+    margin: 0 auto;
+    width: 95%;
+    height: auto;
+  }
+
+  .title {
+    font-size: 0.9rem;
+  }
 }
