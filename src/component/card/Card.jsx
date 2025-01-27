@@ -45,7 +45,7 @@ const Card = () => {
           <div className="vote-bg">
             <p></p>
             <div className="phone-front">
-              <p></p>
+              <p>hiii</p>
               <div className="button">.</div>
               <div className="phone-screen">
               <img src={tower} alt="Phone signal tower" className="ph-top"/>
