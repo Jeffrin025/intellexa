@@ -75,14 +75,14 @@ const Card = () => {
                               alt="Tick Mark"
                               className="tick-mark"
                               onClick={() => handleCardClick(route)} 
-                              style={{ height: "40px" ,marginLeft:"40px"}} 
+                               
                             />
                             <img
                               src={cross}
                               alt="Cross Mark"
                               className="cross-mark"
                               onClick={handleCrossClick} 
-                              style={{height: "40px"}} 
+                               
                             />
                           </div>
                         )}
