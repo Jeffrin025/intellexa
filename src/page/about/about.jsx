@@ -21,7 +21,7 @@ const About = () => {
                 
                 <div className='border2'>
                 <div className="about-title">
-              <h1 className='topic'>ABOUT US</h1>
+              <h1 className='topics'>ABOUT US</h1>
               
             </div>
                     <div >  
@@ -35,10 +35,10 @@ const About = () => {
                     <div>   <h2 className='hed' >MISSION 03</h2>  <img src={ch3} className='cha'/>
                     <h2  className='dec'>Discover new hacks and innovate like a pro!</h2>
                     </div>
-                    <div >  <h2 className='hed' >MISSION 04</h2>   <img src={amoung}className='cha' />
+                    <div >  <h2 className='hed' >MISSION 04</h2>   <img src={ch3}className='cha' />
                     <h2 className='dec' >Call emergency meetings to share ideas and grow together.</h2>
                     </div>
-                    <div >   <h2 className='hed' >MISSION 05</h2>  <img src={amoung}className='cha' />
+                    <div >   <h2 className='hed' >MISSION 05</h2>  <img src={ch3}className='cha' />
                     <h2 className='dec'>Stick with the crew for endless learning and fun!</h2>
                     </div>
 
