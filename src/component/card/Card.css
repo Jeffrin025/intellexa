@@ -196,6 +196,9 @@
 
 /* Phone View */
 @media (max-width: 480px) {
+  body{
+    overflow-x: hidden;
+  }
   .book-content{
     margin-top: -40px;
   }
