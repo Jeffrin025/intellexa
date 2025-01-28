@@ -11,26 +11,7 @@ const Home = () => {
     <>
       <BG />
       <div className="home-content">
-        <img className='shh' src={shh} alt="image" />
-        <h1 className='mess'>
-  <span>I</span>
-  <span>n</span>
-  <span>n</span>
-  <span>o</span>
-  <span>v</span>
-  <span>a</span>
-  <span>t</span>
-  <span>e</span>
-  <span className="w"> </span>
-  <span>C</span>
-  <span>r</span>
-  <span>e</span>
-  <span>a</span>
-  <span>t</span>
-</h1>
-
-
-        <div className="content">
+            <div className="content">
           <h1 className='heading'>INTELLEXA</h1>
           <h4 className='intro'>
           A party Has Been Reported!

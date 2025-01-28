@@ -48,8 +48,11 @@ const Card = () => {
               <p></p>
               <div className="button">.</div>
               <div className="phone-screen">
-              <img src={tower} alt="Phone signal tower" className="ph-top" style={{height:"90px"}}/>
+              <img src={tower} alt="Phone signal tower" className="signal" />
               <img src={battery} alt="Phone Battery" className="ph-top" />
+              <h1 className="word">Who Is The Imposter?</h1>
+                <h4 className="vote">Voting Begins In : 5s</h4>
+                <h4 className="ping"> PING: 118 ms</h4>
                 <div className="card flex">
                   {Array.from({ length: 9 }, (_, index) => {
                     const cardClass = `cards white 0${index + 1}`;

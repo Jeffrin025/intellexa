@@ -13,15 +13,10 @@ const About = () => {
   return (
    
     <>
-    <BG className="og-bg"/>
+    <BG />
     
     <section id='about'>
-    <div className="video-background-container">
-      <video className="video-background" autoPlay muted loop playsInline>
-        <source src="background-video.mp4" type="video/mp4" />
-       
-      </video>
-      </div>
+   
         <div className="about-content">
         
             <img className='space' src={space} alt='spaceship'/>

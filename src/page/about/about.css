@@ -11,7 +11,7 @@
   }
   .about-content {
     font-family: 'InYourFace', sans-serif;
-    top: px;  
+    top: 115px;  
     left: 180px;
     position: relative;
     color: white;
@@ -45,7 +45,10 @@
     border: 3px solid white;
     border-radius: 25px;
   }
-  
+  .topics{
+    font-size: 3.9rem;
+    margin-left: -35px;
+  }
   .cha{
     width: 165px;
     height: 165px;
@@ -67,7 +70,7 @@
     position: absolute;
     top: 50px;
     width: 100%;
-  
+    
     text-align: center;
   }
   .about-title::after {
@@ -154,3 +157,4 @@
     }
     
   }
+
