@@ -11,7 +11,7 @@
   }
   .about-content {
     font-family: 'InYourFace', sans-serif;
-    top: 85px;  
+    top: px;  
     left: 180px;
     position: relative;
     color: white;
@@ -98,4 +98,59 @@
       transform: translateY(0);
     }
   }
+  @media (max-width: 768px) {
+    .about-content {
+      left: 50px;
+      top: 100px; /* Adjusted top to center content */
+    }
   
+    .border {
+      width: 90%; /* Adjusted width for better responsiveness */
+      height: 80%; /* Reduced height for better spacing */
+    }
+  
+    .border2 {
+      flex-direction: column; /* Display the missions in a single column */
+      gap: 30px; /* Increased gap for clarity */
+      align-items: center; /* Centering elements */
+    }
+  
+    .cha {
+      width: 120px; /* Adjust image size for smaller screens */
+      height: 120px;
+    }
+  
+    .dec {
+      font-size: 1.3rem; /* Adjust font size for better readability */
+    }
+  
+    .hed {
+      font-size: 1.6rem; /* Slightly smaller header */
+    }
+  }
+  
+
+/* Media query for phones only */
+@media (max-width: 768px) {
+  .video-background {
+    display: block; /* Show video only on screens smaller than 768px */
+  }
+}
+  
+  /* Phone View */
+  @media (max-width: 480px) {
+    .about-content{
+      height: 250vh;
+      margin-left: -50px;
+    }
+    .border{
+     width: 85vw;
+    }
+    .dec{
+      font-size: 0.9rem;
+    }
+    .space{
+      margin-right: -120px;
+    }
+    
+  }

@@ -68,6 +68,7 @@ const Card = () => {
                           className="ca"
                         />
                         <h3 className="title">Event {index + 1}</h3>
+                        
                         {hoveredCard === index + 1 && (
                           <div className="hover-images" >
                             <img

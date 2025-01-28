@@ -13,10 +13,18 @@ const About = () => {
   return (
    
     <>
-    <BG/>
+    <BG className="og-bg"/>
+    
     <section id='about'>
+    <div className="video-background-container">
+      <video className="video-background" autoPlay muted loop playsInline>
+        <source src="background-video.mp4" type="video/mp4" />
+       
+      </video>
+      </div>
         <div className="about-content">
-            < img className='space' src={space}/>
+        
+            <img className='space' src={space} alt='spaceship'/>
             <div className='border'>
                 
                 <div className='border2'>
@@ -24,21 +32,23 @@ const About = () => {
               <h1 className='topics'>ABOUT US</h1>
               
             </div>
-                    <div >  
+                    <div className='miss'>  
                     <h2 className='hed' >MISSION 01</h2> 
                         <img src={ch1} className='cha' />
                     <h2 className='dec' >Assemble your crew and join our tech-savvy mission!</h2>
                     </div>
-                    <div >  <h2 className='hed' >MISSION 02</h2>   <img src={ch2} className='cha'/>
+                    <div className='mission'>  <h2 className='hed' >MISSION 02</h2>   <img src={ch2} className='cha'/>
                     <h2 className='dec'>Complete tasks and level up your skills in workshops.</h2>
                     </div>
-                    <div>   <h2 className='hed' >MISSION 03</h2>  <img src={ch3} className='cha'/>
+                    <div className='mission'>   <h2 className='hed' >MISSION 03</h2>  <img src={ch3} className='cha'/>
                     <h2  className='dec'>Discover new hacks and innovate like a pro!</h2>
                     </div>
-                    <div >  <h2 className='hed' >MISSION 04</h2>   <img src={ch3}className='cha' />
+                    
+                    <div className='mission'>  <h2 className='hed' >MISSION 04</h2>   <img src={ch3}className='cha' />
                     <h2 className='dec' >Call emergency meetings to share ideas and grow together.</h2>
                     </div>
-                    <div >   <h2 className='hed' >MISSION 05</h2>  <img src={ch3}className='cha' />
+                    
+                    <div className='mission'>   <h2 className='hed' >MISSION 05</h2>  <img src={ch3}className='cha' />
                     <h2 className='dec'>Stick with the crew for endless learning and fun!</h2>
                     </div>
 

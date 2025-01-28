@@ -7,7 +7,7 @@
   position: relative;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 0px;
   font-family: Arial, sans-serif;
   width: 100vw;
   height: 100vh;
@@ -138,6 +138,7 @@
 
 /* Tablet View */
 @media (max-width: 768px) {
+  
   .phone-front {
     width: 85vw;
     height: 70vh;
@@ -166,17 +167,21 @@
 
 /* Phone View */
 @media (max-width: 480px) {
-  .phone-front {
-    margin-left: -30px;
-    width: 95vw;
-    height: 124vh;
+  .book-content{
+    margin-top: -40px;
   }
-
+  .phone-front {
+    margin-left: -27px;
+    width: 95vw;
+    height: 120vh;
+  }
+  
   .phone-screen {
     margin: 0 auto;
     height: 110vh;
     width: 95%;
     padding: 0px;
+    margin-top: -40px;
   }
 
   .card {
