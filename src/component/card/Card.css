@@ -254,6 +254,9 @@
   .tick-mark{
     left: 60px;
   }
+  .vote{
+    font-size: 0px;
+  }
   .signal{
     top: 0%;
     left: -10%;
@@ -273,11 +276,11 @@
   }
 }
 
-@media (min-width:481px) and (max-width: 540px) {
+@media (min-width:481px) and (max-width: 580px) {
   .phone-screen {
-   height: 96vh;
+   height: 93vh;
   }
   .phone-front{
-    height: 108vh;
+    height: 103vh;
   }
 }
