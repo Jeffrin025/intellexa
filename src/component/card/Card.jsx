@@ -52,7 +52,6 @@ const Card = () => {
               <img src={battery} alt="Phone Battery" className="ph-top" />
               <h1 className="word">Who Is The Imposter?</h1>
                 <h4 className="vote">Voting Begins In : 5s</h4>
-                <h4 className="ping"> PING: 118 ms</h4>
                 <div className="card flex">
                   {Array.from({ length: 9 }, (_, index) => {
                     const cardClass = `cards white 0${index + 1}`;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import BG from '../../component/bg/bg'
-import './Home.css';
+import '../home/Home.css'
 import shh from '../../assets/shh.png';
 import bg from '../../assets/bg.png';
 

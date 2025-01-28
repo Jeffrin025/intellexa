@@ -101,7 +101,7 @@
 .title{
   font-size: 1.3rem;
   margin-left: 15px;
-  margin-top: 15px;
+  margin-top: 18px;
   font-family:'Varela Round';
 }
 .r1{
@@ -110,7 +110,7 @@
 
 .hover-images {
   position: absolute;
-  top: 10px;
+  top: 13px;
   left: 60%;
   right: 25px;
   display: flex;
@@ -140,12 +140,7 @@
  left: 870px;
 }
 
-.ping{
-  color: white;
-  position: absolute;
-  top: 473px;
-  left: 475px;
-}
+
 .word{
   position: absolute;
   font-size: 2rem;
@@ -155,7 +150,7 @@
 
 }
 .tick-mark, .cross-mark {
-  height: 50px;
+  height: 40px;
   cursor: pointer;
 }
 
@@ -220,7 +215,7 @@
 
   .card {
     justify-content: center;
-    flex-wrap: nowrap; /* Ensure one card per row */
+    flex-wrap: nowrap; 
     flex-direction: column;
     row-gap: 10px;
   }
@@ -255,5 +250,31 @@
   }
   .tick-mark{
     left: 60px;
+  }
+  .signal{
+    top: 0%;
+    left: -10%;
+    height: 60px;
+    width: 90px;
+  }
+  .word{
+    font-size: 1.0rem;
+    top: 3%;
+    margin-left: -38px;
+  }
+  .ph-top{
+    top: 3%;
+    margin-left: -25px;
+    height: 30px;
+    width: 40px;
+  }
+}
+
+@media (min-width:481px) and (max-width: 540px) {
+  .phone-screen {
+   height: 96vh;
+  }
+  .phone-front{
+    height: 108vh;
   }
 }
