@@ -165,34 +165,7 @@
 }
 
 
-/* Tablet View */
-@media (max-width: 768px) {
-  
-  .phone-front {
-    width: 85vw;
-    height: 70vh;
-  }
 
-  .phone-screen {
-    margin: 0 auto;
-    height: 80vh;
-    width: 90%;
-    padding: 20px;
-  }
-
-  .card {
-    justify-content: center;
-    flex-wrap: nowrap; /* Ensure one card per row */
-    flex-direction: column;
-    row-gap: 15px;
-  }
-
-  .cards {
-    margin: 0 auto;
-    width: 90%;
-    height: auto;
-  }
-}
 
 /* Phone View */
 @media (max-width: 480px) {
@@ -276,7 +249,7 @@
   }
 }
 
-@media (min-width:481px) and (max-width: 650px) {
+@media  (max-width: 800px) {
   .phone-screen {
    height: 13vh;
   }
