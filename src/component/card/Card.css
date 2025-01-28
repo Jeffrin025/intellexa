@@ -276,11 +276,11 @@
   }
 }
 
-@media (min-width:481px) and (max-width: 630px) {
+@media (min-width:481px) and (max-width: 650px) {
   .phone-screen {
-   height: 83vh;
+   height: 13vh;
   }
   .phone-front{
-    height: 103vh;
+    height: 33vh;
   }
 }
