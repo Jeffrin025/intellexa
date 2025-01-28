@@ -251,17 +251,18 @@
 
 @media (min-width:482px) and (max-width: 800px) {
   .phone-screen {
-   height: 95vh;
+   height: 87vh;
   }
   .phone-front{
-    height: 93vh;
+    height: 90vh;
   }
   .word{
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     margin-top: 20px;
+    margin-left: 5px;
   }
   .signal{
-    margin-left: 25px;
+    margin-left: 33px;
   }
   .vote{
     font-size: 0px;
