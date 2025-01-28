@@ -249,11 +249,21 @@
   }
 }
 
-@media  (max-width: 800px) {
+@media (min-width:482px) and (max-width: 800px) {
   .phone-screen {
-   height: 13vh;
+   height: 95vh;
   }
   .phone-front{
-    height: 33vh;
+    height: 93vh;
+  }
+  .word{
+    font-size: 1.1rem;
+    margin-top: 20px;
+  }
+  .signal{
+    margin-left: 25px;
+  }
+  .vote{
+    font-size: 0px;
   }
 }

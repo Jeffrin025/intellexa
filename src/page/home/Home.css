@@ -174,3 +174,18 @@ letter-spacing: 0.5px;
     transform: translateY(-50%);
   }
 }
+
+@media (min-width:481px) and (max-width: 800px) {
+  .intro{
+    margin-top: 20px;
+  }
+  .desc{
+    margin-top: -30px;
+  }
+  .menu{
+    margin-top: 20px;
+  }
+  .amoungus{
+    margin-top: -15px;
+  }
+}

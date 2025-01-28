@@ -160,13 +160,13 @@
     
   }
 
-  @media (min-width:481px) and (max-width: 540px) {
-    .about-content{
-      height: 223vh;
-
+  @media (min-width:481px) and (max-width: 800px) {
+    .border{
+      height: 79vh;
     }
     .miss{
-      margin-top: 30px;
+      margin-top: 35px;
     }
+
   }
 
