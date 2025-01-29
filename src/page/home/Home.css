@@ -119,12 +119,12 @@ letter-spacing: 0.5px;
   }
 
   .intro {
-    font-size: 1.5rem;
-    top: 25%;
+    font-size: 1.6rem;
+    top: 21%;
   }
   .menu {
     font-size: 1.9rem;
-    top: 35%;
+    top: 32%;
     left: 50%;
     transform: translate(-50%, -50%);
     gap: 20px;
@@ -133,14 +133,14 @@ letter-spacing: 0.5px;
   .amoungus {
     width: 300px;
     height: 500px;
-    top: 20%;
+    top: 13%;
     left: 50%;
     transform: translateX(-50%);
   }
   .desc {
-    font-size: 0.7rem;
-    top: 78%;
-  
+    font-size: 1.2rem;
+    top: 72%;
+   justify-content: center;
   }
 }
 @media (min-width: 769px) {
@@ -181,6 +181,7 @@ letter-spacing: 0.5px;
     margin-top: 20px;
   }
   .desc{
+    font-size: 1.4rem;
     margin-top: -30px;
   }
   .menu{

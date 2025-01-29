@@ -80,7 +80,6 @@
     width: 13%;
     height: 2px;
     margin-left: 466px;
-
     background-color: white; 
   }
   .space {
@@ -145,27 +144,31 @@
       overflow-x: hidden;
     }
     .about-content{
-      height: 250vh;
+     margin-top: -120px;
+      height: 253vh;
       margin-left: -50px;
     }
     .border{
      width: 85vw;
     }
     .dec{
-      font-size: 0.9rem;
+      font-size: 1.1rem;
     }
     .space{
       margin-right: -120px;
+    }
+    .cha{
+      margin-left: 56px;
     }
     
   }
 
   @media (min-width:481px) and (max-width: 800px) {
     .border{
-      height: 79vh;
+      height: 75vh;
     }
     .miss{
-      margin-top: 35px;
+      margin-top: -60px;
     }
 
   }
