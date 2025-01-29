@@ -3,7 +3,6 @@ import { useParams, useNavigate } from 'react-router-dom';
 import BG from './component/bg/bg';
 import './b.css';
 import exit from './assets/exit.png'
-import eme from './assets/eme2.png'
 import crew from './assets/crew1.png'
 import kill from './assets/kill.png'
 import reg from './assets/reg.png'
@@ -31,10 +30,10 @@ const B = () => {
         <h1 className='attention'> Attention Crewmates!</h1>
 
         <div className="button-container">
-          <button className="transparent-button1">LOCAL</button>
-          <button className="transparent-button2">ONLINE</button> 
+          <button className="transparent-button1">INDOOR AUDITORIUM  </button>
+          <button className="transparent-button2">12.00 PM</button> 
         </div>
-        <button className="transparent-button3">HOW TO PLAY</button>
+        <button className="transparent-button3">RAJALAKSHMI ENGINEERING COLLEGE</button>
 
      
         <div className="event-details">
