@@ -6,6 +6,7 @@ import ch3 from '../../assets/ch3.png'
 import ch1 from '../../assets/ch1.png'
 import space from '../../assets/space.png'
 import ch5 from '../../assets/ch5.png'
+import ch4 from '../../assets/ch4.png'
 
 
 const About = () => {
@@ -38,7 +39,7 @@ const About = () => {
                     <h2  className='dec'>Discover new hacks and innovate like a pro!</h2>
                     </div>
                     
-                    <div className='mission'>  <h2 className='hed' >MISSION 04</h2>   <img src={ch3}className='character' />
+                    <div className='mission'>  <h2 className='hed' >MISSION 04</h2>   <img src={ch4}className='character' />
                     <h2 className='dec' >Call emergency meetings to share ideas and grow together.</h2>
                     </div>
                     

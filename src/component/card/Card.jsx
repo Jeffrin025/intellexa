@@ -7,17 +7,27 @@ import cross from '../../assets/cross.png';
 import amongus from "../../assets/cha.png"; 
 import tower from '../../assets/signal.png';
 import battery from '../../assets/batter.png';
+import one from '../../assets/1.png'
+import two from '../../assets/2.png'
+import three from '../../assets/3.png'
+import four from '../../assets/4.png'
+import five from '../../assets/5.png'
+import six from '../../assets/6.png'
+import seven from '../../assets/7.png'
+import eight from '../../assets/8.png'
+import nine from '../../assets/9.png'
+
 
 const eventDetails = [
-  { image: amongus, title: "Event 1" },
-  { image: amongus, title: "Event 2" },
-  { image: amongus, title: "Event 3" },
-  { image: amongus, title: "Event 4" },
-  { image: amongus, title: "Event 5" },
-  { image: amongus, title: "Event 6" },
-  { image: amongus, title: "Event 7" },
-  { image: amongus, title: "Event 8" },
-  { image: amongus, title: "Event 9" },
+  { image: one, title: "Event 1" },
+  { image: two, title: "Event 2" },
+  { image: three, title: "Event 3" },
+  { image: four, title: "Event 4" },
+  { image: five, title: "Event 5" },
+  { image: six, title: "Event 6" },
+  { image: seven, title: "Event 7" },
+  { image: eight, title: "Event 8" },
+  { image: nine, title: "Event 9" },
 ];
 
 const Card = () => {
