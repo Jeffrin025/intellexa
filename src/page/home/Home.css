@@ -105,6 +105,7 @@ letter-spacing: 0.5px;
 .menu a{
   color: red;
 }
+
 @media (max-width: 480px) {
   body{
     overflow-x: hidden;

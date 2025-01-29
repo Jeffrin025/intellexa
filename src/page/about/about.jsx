@@ -6,6 +6,7 @@ import './about.css'
 import amoung from '../../assets/cha.png'
 import ch2 from '../../assets/ch2.png'
 import ch3 from '../../assets/ch3.png'
+
 import ch1 from '../../assets/ch1.png'
 import space from '../../assets/space.png'
 
