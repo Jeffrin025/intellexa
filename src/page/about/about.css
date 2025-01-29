@@ -80,7 +80,6 @@
     width: 13%;
     height: 2px;
     margin-left: 466px;
-
     background-color: white; 
   }
   .space {
@@ -145,28 +144,40 @@
       overflow-x: hidden;
     }
     .about-content{
-      height: 250vh;
-      margin-left: -50px;
+     margin-top: -120px;
+      height: 253vh;
+      margin-left: -40px;
     }
     .border{
      width: 85vw;
     }
+    .topics{
+      margin-left: 1px;
+    }
     .dec{
-      font-size: 0.9rem;
+      font-size: 1.1rem;
     }
     .space{
       margin-right: -120px;
+    }
+    .cha{
+      margin-left: 69px;
+    }
+    .about-title::after {
+      margin-left: 55px;
+      width: 53%;
     }
     
   }
 
   @media (min-width:481px) and (max-width: 800px) {
     .border{
-      height: 79vh;
+      height: 75vh;
+      
     }
     .miss{
-      margin-top: 35px;
+      margin-top: -80px;
     }
-
+    
   }
 

@@ -173,7 +173,7 @@
     overflow-x: hidden;
   }
   .book-content{
-    margin-top: -40px;
+    margin-top: -290px;
   }
   .phone-front {
     margin-left: -27px;
@@ -251,7 +251,8 @@
 
 @media (min-width:482px) and (max-width: 800px) {
   .phone-screen {
-   height: 87vh;
+   height: 82vh;
+   
   }
   .phone-front{
     height: 90vh;
