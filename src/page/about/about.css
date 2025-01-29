@@ -159,12 +159,15 @@
     }
     .space{
       margin-right: -120px;
+      margin-top: 220px;
     }
     .cha{
       margin-left: 69px;
+  
+      
     }
     .about-title::after {
-      margin-left: 55px;
+      margin-left: 65px;
       width: 53%;
     }
     
@@ -178,6 +181,9 @@
     .miss{
       margin-top: -80px;
     }
-    
+    .about-title::after {
+      margin-left: 75px;
+      width: 53%;
+    }
   }
 

@@ -28,7 +28,7 @@ const B = () => {
         {/* <img src={eme} className='eme'/> */}
         <h1 className='head'>EVENT TITLE</h1>
         <img src={crew} className='crew'/>
-        <h1 className='reg'> Attention Crewmates!</h1>
+        <h1 className='attention'> Attention Crewmates!</h1>
 
         <div className="button-container">
           <button className="transparent-button1">LOCAL</button>
@@ -38,14 +38,14 @@ const B = () => {
 
      
         <div className="event-details">
-        <h1 className='res'>EVENT DETAILS</h1>
-        <ul class="custom-list">
+        <h1 className='box-title'>EVENT DETAILS</h1>
+        <ul className="custom-list" style={{fontSize:'1.1rem',marginLeft:'320px',textAlign:'initial',marginTop:'-20px'}}>
   <li> The event will focus on the latest technological advancements, offering participants a unique </li>
   <li> Attendees will have access to exclusive workshops and seminars designed to deepen their</li>
   <li> Networking opportunities will be abundant, allowing participants to connect with professionals, </li>
   <li>The event will feature exciting competitions and challenges that will test the</li>
 </ul>
-<img src={reg} className='regs'/>
+<img src={reg} className='regs-btn'/>
 <h3 className='key'> CLICK TO REGISTER ==&gt;&gt; </h3>
          <div className='event'>
           <div>
@@ -54,7 +54,7 @@ const B = () => {
   
          </div>
       
-         <h2 className='re'>REGISTER NOW !</h2>
+         <h2 className='regs-now'>REGISTER NOW !</h2>
          
         </div>
      
