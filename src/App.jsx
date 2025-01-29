@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Main from './page/main/main';
-import B from './b'
+import Details from './details'
 
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <Routes>
   
         <Route path="/" element={<Main />} />
-        <Route path="/:id" element={<B />} />
+        <Route path="/:id" element={<Details />} />
       
       </Routes>
     </Router>
