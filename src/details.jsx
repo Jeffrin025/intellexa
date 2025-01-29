@@ -4,7 +4,7 @@ import BG from './component/bg/bg';
 import './details.css';
 import exit from './assets/exit.png';
 import crew from './assets/crew1.png';
-import kill from './assets/kill.png';
+
 import reg from './assets/reg.png';
 
 const eventData = [
@@ -54,10 +54,10 @@ const Details = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   
-  // Find the event based on the id
+  
   const event = eventData.find(event => event.id === id);
   
-  // If no event is found, redirect to event listing page or show an error
+ 
   if (!event) {
     navigate("/#event");
     return null;
@@ -98,7 +98,8 @@ const Details = () => {
           <h3 className='key'> CLICK TO REGISTER ==&gt;&gt; </h3>
           <div className='event'>
             <div>
-              <img src={kill} className='kill' />
+              {/* <img src={kill} className='kill' /> */}
+              <h1>event poster </h1>
             </div>
           </div>
           <h2 className='regs-now'>REGISTER NOW!</h2>
