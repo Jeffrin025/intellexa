@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'amongus': ['InYourFace', 'sans-serif'],
+        'bazingaItalic': ['bazingaItalic', 'sans-serif']
+      }
+    },
   },
   plugins: [],
 }

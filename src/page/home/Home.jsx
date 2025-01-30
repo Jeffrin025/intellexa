@@ -1,29 +1,85 @@
 import React from 'react';
 import BG from '../../component/bg/bg';
-import './Home.css';
-import bg from '../../assets/bg.png';
+import background_image from '../../assets/background_image.jpg';
+import { Navbar } from '../../component/navbar';
+import { motion } from 'framer-motion';
 
 const Home = () => {
+  const container = {
+    hidden: { opacity: 0 },
+    visible: (i = 1) => ({
+      opacity: 1,
+      transition: { staggerChildren: 0.03, delayChildren: 0.5 * i },
+    }),
+  };
+
+  const child = {
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        damping: 12,
+        stiffness: 200,
+      },
+    },
+    hidden: {
+      opacity: 0,
+      y: 20,
+    },
+  };
+
+  const letters = "Resonance 25".split('');
+  const tagLine = "tagline over here".split('');
+
   return (
     <>
-      <BG />
-      <div className="home-content w-full h-screen flex flex-col justify-center items-center text-white p-5">
-        <div className="content text-center">
-          <h1 className="heading text-6xl md:text-8xl lg:text-9xl font-bold tracking-wide">INTELLEXA</h1>
-          <h4 className="intro text-lg md:text-2xl lg:text-3xl mt-4">A Party Has Been Reported!</h4>
-          
-          <div className="menu flex flex-row gap-5 mt-6 md:mt-10 text-xl md:text-2xl">
-            <a href="#about" className="text-red-500 hover:text-red-700">ABOUT</a>
-            <a href="#event" className="text-red-500 hover:text-red-700 font-bold">EVENTS</a>
-            <a href="#contact" className="text-red-500 hover:text-red-700">CONTACT</a>
+      {/* Background Overlay */}
+      <div className="absolute inset-0">
+        <BG />
+      </div>
+
+      <div className="relative min-h-screen flex flex-col">
+        <Navbar />
+
+        {/* Hero Section */}
+        <div className="relative flex-1 flex flex-col justify-end">
+          <img
+            src={background_image}
+            alt="Hero"
+            className="absolute inset-0 w-full h-full object-cover opacity-50"
+          />
+          <div className="relative z-10 text-center pb-10 -mb-10 lg:-mb-24">
+            <motion.div className='lg:pl-20 pl-6 text-left'
+              variants={container}
+              initial="hidden"
+              animate="visible">
+              {tagLine.map((letter, index) => (
+                <motion.span
+                  key={index}
+                  variants={child}
+                  className="text-white font-bazingaItalic mb-4 text-left text-[20px] md:text-[40px] "
+                >
+                  {letter}
+                </motion.span>
+              ))}
+            </motion.div>
+            <motion.h1
+              variants={container}
+              initial="hidden"
+              animate="visible"
+            >
+              {letters.map((letter, index) => (
+                <motion.span
+                  key={index}
+                  variants={child}
+                  className="text-[clamp(3rem,15vw,20rem)] tracking-wide font-bold text-white drop-shadow-[5px_5px_25px_rgba(255,255,255,0.3)] font-bazingaItalic"
+                >
+                  {letter}
+                </motion.span>
+              ))}
+            </motion.h1>
           </div>
-
-          <img className="amoungus w-64 md:w-96 lg:w-[600px] mx-auto mt-10" src={bg} alt="image" />
-
-          <p className="desc text-sm md:text-lg lg:text-xl text-center mt-6 px-4">
-            Join your crewmates to tackle challenges before the Impostor sabotages the event. <br />
-            Register for the event or risk being 'voted off'!
-          </p>
         </div>
       </div>
     </>
