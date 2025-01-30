@@ -1,60 +1,54 @@
-import React from 'react';
-import BG from '../../component/bg/bg'
-import './about.css'
-import ch2 from '../../assets/ch2.png'
-import ch3 from '../../assets/ch3.png'
-import ch1 from '../../assets/ch1.png'
-import space from '../../assets/space.png'
-import ch5 from '../../assets/ch5.png'
-import ch4 from '../../assets/ch4.png'
+import React from "react";
+import { VerticalTimeline } from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import one from '../../assets/icon.png'
 
+import AboutCard from "../../component/aboutuscard";
+import EarthCanvas from "../../component/canvas/Earth";
+
+const data = [
+  {
+    id: 0,
+    title: "TITLE 1",
+    img: one,
+    passage: "We are a team of passionate individuals committed to delivering innovative solutions. Our journey has been one of growth, learning, and collaboration, and we continue to strive towards making a positive impact in the tech world.",
+  },
+  {
+    id: 1,
+    title: "TITLE 2",
+    img: one,
+    passage: "We are a team of passionate individuals committed to delivering innovative solutions. Our journey has been one of growth, learning, and collaboration, and we continue to strive towards making a positive impact in the tech world.",
+  },
+  {
+    id: 2,
+    title: "TITLE 3",
+    img: one,
+    passage: "We are a team of passionate individuals committed to delivering innovative solutions. Our journey has been one of growth, learning, and collaboration, and we continue to strive towards making a positive impact in the tech world.",
+  },
+  {
+    id: 3,
+    title: "TITLE 4",
+    img: one,
+    passage: "We are a team of passionate individuals committed to delivering innovative solutions. Our journey has been one of growth, learning, and collaboration, and we continue to strive towards making a positive impact in the tech world.",
+  },
+];
 
 const About = () => {
   return (
-   
-    <>
-    <BG />
-    
-    <section id='about'>
-   
-        <div className="about-content">
-        
-            <img className='space' src={space} alt='spaceship'/>
-            <div className='border'>
-                
-                <div className='border2'>
-                <div className="about-title">
-              <h1 className='topics'>ABOUT US</h1>
-              
-            </div>
-                    <div className='miss'>  
-                    <h2 className='hed' >MISSION 01</h2> 
-                        <img src={ch1} className='character' />
-                    <h2 className='dec' >Assemble your crew and join our tech-savvy mission!</h2>
-                    </div>
-                    <div className='mission'>  <h2 className='hed' >MISSION 02</h2>   <img src={ch2} className='character'/>
-                    <h2 className='dec'>Complete tasks and level up your skills in workshops.</h2>
-                    </div>
-                    <div className='mission'>   <h2 className='hed' >MISSION 03</h2>  <img src={ch3} className="character" style={{ width: '120px' }}  />
-                    <h2  className='dec'>Discover new hacks and innovate like a pro!</h2>
-                    </div>
-                    
-                    <div className='mission'>  <h2 className='hed' >MISSION 04</h2>   <img src={ch4}className='character' />
-                    <h2 className='dec' >Call emergency meetings to share ideas and grow together.</h2>
-                    </div>
-                    
-                    <div className='mission'>   <h2 className='hed' >MISSION 05</h2>  <img src={ch5}className='character'   />
-                    <h2 className='dec'>Stick with the crew for endless learning and fun!</h2>
-                    </div>
+    <div className="flex flex-col items-center justify-center relative z-10 mt-20">
+      <div className="relative flex flex-col items-center justify-between w-full max-w-[1100px] gap-3 sm:flex-col">
+      <div className="text-4xl font-semibold text-center mt-5 text-white sm:text-2xl sm:mt-3 md:text-8xl font-bazingaItalic tracking-wide">
+      ABOUT US 
+      </div>
 
-                </div>
-           
-
-            </div>
-        
-        </div>
-        </section>
-        </>
+        <VerticalTimeline>
+          {data.map((item, index) => (
+            <AboutCard key={`data-${index}`} data={item} />
+          ))}
+        </VerticalTimeline>
+        <EarthCanvas />
+      </div>
+    </div>
   );
 };
 
