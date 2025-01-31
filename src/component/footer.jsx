@@ -13,7 +13,7 @@ export const Footer = () => {
                     <div className="absolute inset-0 bg-black/80 rounded-[50px]"></div>
                     <div className="absolute bottom-0 left-8 h-[30%] overflow-hidden">
                         <div
-                            className="md:text-[100px] sm:text-[60px] leading-none tracking-wide whitespace-nowrap "
+                            className="md:text-[100px] text-[60px] leading-none tracking-wide whitespace-nowrap "
                         // style={{ transform: "translateY(10%)" }}
                         >
                             Intellexa
