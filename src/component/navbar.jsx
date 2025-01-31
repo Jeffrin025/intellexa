@@ -40,12 +40,12 @@ export function Navbar() {
         </div>
       </motion.div>
 
-      <AnimatePresence>{isMenuOpen && <FullScreenMenu />}</AnimatePresence>
+      <AnimatePresence>{isMenuOpen && <FullScreenMenu setIsMenuOpen = {setIsMenuOpen} />}</AnimatePresence>
     </>
   )
 }
 
-function FullScreenMenu() {
+function FullScreenMenu({ setIsMenuOpen }) {
   return (
     <motion.div
       className="fixed inset-0 bg-black text-white z-40 flex flex-col justify-center items-center"
@@ -56,38 +56,42 @@ function FullScreenMenu() {
     >
       <nav className="text-4xl space-y-8 font-bazingaItalic text-center">
         <motion.a
-          href="#"
+          href="#home"
           className="block hover:text-gray-300 transition-colors"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
+          onClick={() => setIsMenuOpen(false)}
         >
           Home
         </motion.a>
         <motion.a
-          href="#"
+          href="#about"
           className="block hover:text-gray-300 transition-colors"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
+          onClick={() => setIsMenuOpen(false)}
         >
           About
         </motion.a>
         <motion.a
-          href="#"
+          href="#events"
           className="block hover:text-gray-300 transition-colors"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
+          onClick={() => setIsMenuOpen(false)}
         >
           Events
         </motion.a>
         <motion.a
-          href="#"
+          href="#contact"
           className="block hover:text-gray-300 transition-colors"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
+          onClick={() => setIsMenuOpen(false)}
         >
           Contact
         </motion.a>

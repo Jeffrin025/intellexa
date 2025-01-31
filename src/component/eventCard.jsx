@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from 'react-router-dom';
 
-export const EventCard = ({ img, title, short_desc }) => {
+export const EventCard = ({ img, title, tagLine, team_size, slug }) => {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
@@ -15,8 +16,8 @@ export const EventCard = ({ img, title, short_desc }) => {
 
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4/5 text-center">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl text-white">{title}</h2>
-                <p className="text-xs md:text-sm mt-4 text-white">
-                    {short_desc}
+                <p className="text-xs md:text-sm mt-4 text-white tracking-wider">
+                    {tagLine}
                 </p>
             </div>
 
@@ -31,12 +32,12 @@ export const EventCard = ({ img, title, short_desc }) => {
             >
                 <div className="flex flex-col md:flex-row justify-between items-center gap-2">
                     <div className="text-white text-sm md:text-base">
-                        Team size: 4
+                        Team size: {team_size}
                     </div>
                     <div className="flex space-x-2">
-                        <button className="border px-4 py-2 rounded-2xl border-white/15 hover:bg-white hover:text-black text-white transition-colors text-xs md:text-sm">
+                        <Link to={`/event/${slug}`} className="border px-4 py-2 rounded-2xl border-white/15 hover:bg-white hover:text-black text-white transition-colors text-xs md:text-sm">
                             More info
-                        </button>
+                        </Link>
                         <button className="border px-4 py-2 rounded-2xl border-white/15 hover:bg-white hover:text-black text-white transition-colors text-xs md:text-sm">
                             Register
                         </button>

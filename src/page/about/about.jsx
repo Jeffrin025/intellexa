@@ -35,7 +35,7 @@ const data = [
 
 const About = () => {
   return (
-    <div className="flex flex-col items-center justify-center relative z-10 mt-20">
+    <div id="about" className="flex flex-col items-center justify-center relative z-10 mt-20">
       <div className="relative flex flex-col items-center justify-between w-full max-w-[1100px] gap-3 sm:flex-col">
       <div className="text-4xl font-semibold text-center mt-5 text-white sm:text-2xl sm:mt-3 md:text-8xl font-bazingaItalic tracking-wide">
       ABOUT US 

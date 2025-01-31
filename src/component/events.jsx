@@ -38,14 +38,19 @@ export const Events = () => {
     }
 
     const eventCards = [
-        { img: card_abstract, title: "Event name", short_desc: "short description or some tagline" },
-        { img: card_abstract_two, title: "Event name", short_desc: "short description or some tagline" },
-        { img: card_abstract, title: "Event name", short_desc: "short description or some tagline" },
-        { img: card_abstract_two, title: "Event name", short_desc: "short description or some tagline" },
+        { img: card_abstract, title: "CyberQuest", tagline: "Race Against Time, Conquer the Treasure!", team_size:3, slug:"cyberquest"},
+        { img: card_abstract_two, title: "Aadukalam", tagline: "DSA Battlefield", team_size: "2 - 3", slug:"aadukalam"},
+        { img: card_abstract, title: "Database Design Duel", tagline: "Two Minds, One Database - Will Yours Lead the Way?", team_size:2, slug: "database-duel-design" },
+        { img: card_abstract_two, title: "Flutter Frenzy", tagline: "Flutter Your Way to Innovation", team_size: 1, slug: "flutter-frenzy"},
+        { img: card_abstract_two, title: "Web Wizard Relay", tagline: "Code. Collaborate. Create.", team_size: 1, slug: "web-wizard-relay" },
+        { img: card_abstract_two, title: "Pixel Verse", tagline: "Please provide tagline", team_size: 1, slug:"pixel-verse"},
+        { img: card_abstract_two, title: "Chamber of Secrets", tagline: "Time's Not Your Friend—But Your Mind Might Be!", team_size: 2, slug:"chamber-of-secrets" },
+        { img: card_abstract_two, title: "Pitch perfect", tagline: "Express Ideas, Inspire Minds", team_size: "3 - 5", slug: "pitch-perfect"},
+        { img: card_abstract_two, title: "Beyond the Screen: 3D Web Design Mastery", tagline: "From Concept to Creation: Shaping Brands of Tomorrow.", team_size: 1, slug:"beyond-the-screen" },
     ]
 
     return (
-        <div className="w-full text-white py-12 sm:py-16 md:py-24 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-60 font-bazingaItalic">
+        <div id="events" className="w-full text-white py-12 sm:py-16 md:py-24 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-60 font-bazingaItalic">
             <div className="text-white w-full text-center my-10 lg:text-[100px] md:text-[80px] text-[50px]">Events</div>
             <motion.div
                 ref={ref}
@@ -56,7 +61,7 @@ export const Events = () => {
             >
                 {eventCards.map((card, index) => (
                     <motion.div key={index} variants={cardVariants}>
-                        <EventCard img={card.img} title={card.title} short_desc={card.short_desc} />
+                        <EventCard img={card.img} title={card.title} tagLine={card.tagline} team_size = {card.team_size} slug={card.slug} />
                     </motion.div>
                 ))}
             </motion.div>

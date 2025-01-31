@@ -28,12 +28,12 @@ const AboutCard = ({ data }) => {
       }}
     >
 
-      <div className="text-7xl sm:text-3xl md:text-5xl font-semibold text-white sm:text-xl font-bazingaItalic text-center tracking-wide">
+      <div className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white font-bazingaItalic text-center tracking-wide">
         {data?.title}
       </div>
 
   
-      <div className="text-2xl sm:text-base md:text-lg font-light text-[#FFFFFF] text-justify sm:text-base">
+      <div className="text-sm md:text-lg font-light text-[#FFFFFF] text-justify">
         {data?.passage}
       </div>
     </VerticalTimelineElement>

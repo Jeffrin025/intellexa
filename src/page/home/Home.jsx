@@ -34,7 +34,6 @@ const Home = () => {
 
   return (
     <>
-      {/* Background Overlay */}
       <div className="absolute inset-0">
         <BG />
       </div>
@@ -42,7 +41,6 @@ const Home = () => {
       <div className="relative min-h-screen flex flex-col">
         <Navbar />
 
-        {/* Hero Section */}
         <div className="relative flex-1 flex flex-col justify-end">
           <img
             src={background_image}
