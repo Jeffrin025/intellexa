@@ -9,7 +9,7 @@ function Main() {
   return (
     <div className='min-h-screen w-screen max-w-screen-2xl'>
       <Home />
-      {/* <About /> */}
+      <About />
       <Events />
       <Footer />
       {/* <About />
