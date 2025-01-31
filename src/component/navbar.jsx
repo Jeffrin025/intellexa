@@ -3,11 +3,14 @@
 import { useState } from "react"
 import { MoveUpRight, X } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
+import { useNavigate } from "react-router-dom"
+const API_URL = import.meta.env.VITE_API_URL
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
+  const navigate = useNavigate();
 
   return (
     <>
@@ -18,15 +21,23 @@ export function Navbar() {
         transition={{ duration: 0.5 }}
       >
         <div className="text-white">Logo</div>
-        <button
-          className="rounded-lg text-white border px-5 py-3 font-extralight flex space-x-3 items-center group"
-          onClick={toggleMenu}
-        >
-          <span>{isMenuOpen ? "Close" : "Menu"}</span>
-          <span className={`transition-transform duration-200 ${isMenuOpen ? "rotate-45" : "group-hover:rotate-45"}`}>
-            {isMenuOpen ? <X size={20} color="white" /> : <MoveUpRight size={20} color="white" />}
-          </span>
-        </button>
+        <div className="flex space-x-2 items-center">
+          <button
+            className="rounded-lg text-white border px-5 py-3 font-extralight flex space-x-3 items-center group"
+            onClick={() => window.location.href = `${API_URL}/auth/google/`}
+          >
+            Sign in
+          </button>
+          <button
+            className="rounded-lg text-white border px-5 py-3 font-extralight flex space-x-3 items-center group"
+            onClick={toggleMenu}
+          >
+            <span>{isMenuOpen ? "Close" : "Menu"}</span>
+            <span className={`transition-transform duration-200 ${isMenuOpen ? "rotate-45" : "group-hover:rotate-45"}`}>
+              {isMenuOpen ? <X size={20} color="white" /> : <MoveUpRight size={20} color="white" />}
+            </span>
+          </button>
+        </div>
       </motion.div>
 
       <AnimatePresence>{isMenuOpen && <FullScreenMenu />}</AnimatePresence>
