@@ -74,7 +74,7 @@ const Home = () => {
                 <motion.span
                   key={index}
                   variants={child}
-                  className="text-[clamp(3rem,15vw,20rem)] tracking-wide font-bold text-white drop-shadow-[5px_5px_25px_rgba(255,255,255,0.3)] font-bazingaItalic"
+                  className="text-[clamp(3rem,15vw,20rem)] text-nowrap tracking-wide font-bold text-white drop-shadow-[5px_5px_25px_rgba(255,255,255,0.3)] font-bazingaItalic"
                 >
                   {letter}
                 </motion.span>
