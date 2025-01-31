@@ -30,7 +30,7 @@ const Home = () => {
   };
 
   const letters = "Resonance 25".split('');
-  const tagLine = "tagline over here".split('');
+  const tagLine = "Ignite Ideas, Innovate future".split('');
 
   return (
     <>
@@ -41,22 +41,24 @@ const Home = () => {
       <div className="relative min-h-screen flex flex-col">
         <Navbar />
 
-        <div className="relative flex-1 flex flex-col justify-end">
+        <div className="relative flex-1 flex items-end pb-16 md:pb-0 px-4 md:0">
           <img
             src={background_image}
             alt="Hero"
             className="absolute inset-0 w-full h-full object-cover opacity-50"
           />
           <div className="relative z-10 text-center pb-10 -mb-10 lg:-mb-24">
-            <motion.div className='lg:pl-20 pl-6 text-left'
+            <motion.div 
+              className='lg:pl-20 pl-4 text-left lg:-mb-10'
               variants={container}
               initial="hidden"
-              animate="visible">
+              animate="visible"
+            >
               {tagLine.map((letter, index) => (
                 <motion.span
                   key={index}
                   variants={child}
-                  className="text-white font-bazingaItalic mb-4 text-left text-[20px] md:text-[40px] "
+                  className="text-white font-bazingaItalic mb-4 text-left text-[20px] md:text-[40px]"
                 >
                   {letter}
                 </motion.span>
@@ -66,6 +68,7 @@ const Home = () => {
               variants={container}
               initial="hidden"
               animate="visible"
+              className='lg:pl-6'
             >
               {letters.map((letter, index) => (
                 <motion.span

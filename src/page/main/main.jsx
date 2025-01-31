@@ -1,5 +1,4 @@
 import Home from '../home/Home'
-import Card from '../../component/card/Card'
 import About from '../about/about'
 import { Events } from '../../component/events'
 import { Footer } from '../../component/footer'
@@ -12,8 +11,6 @@ function Main() {
       <About />
       <Events />
       <Footer />
-      {/* <About />
-      <Card /> */}
     </div>
   )
 }

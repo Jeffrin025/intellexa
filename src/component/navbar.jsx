@@ -15,7 +15,7 @@ export function Navbar() {
   return (
     <>
       <motion.div
-        className="flex justify-between items-center w-full overflow-x-hidden py-10 lg:px-16 px-10 font-bazingaItalic absolute top-0 left-0 z-50"
+        className="flex justify-between items-center w-full overflow-x-hidden py-10 lg:px-16 md:px-10 px-5 font-bazingaItalic absolute top-0 left-0 z-50"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
@@ -24,9 +24,9 @@ export function Navbar() {
         <div className="flex space-x-2 items-center">
           <button
             className="rounded-lg text-white border px-5 py-3 font-extralight flex space-x-3 items-center group"
-            onClick={() => window.location.href = `${API_URL}/auth/google/`}
+            onClick={() => console.log("clicked")}
           >
-            Sign in
+            Register Now
           </button>
           <button
             className="rounded-lg text-white border px-5 py-3 font-extralight flex space-x-3 items-center group"
