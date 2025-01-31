@@ -1,10 +1,14 @@
-import { useParams } from "react-router-dom"
-import BG from "../../component/bg/bg"
-import { eventData } from "../../eventData"
+import { useParams, useNavigate } from "react-router-dom";
+import BG from "../../component/bg/bg";
+import { eventData } from "../../eventData";
+import { Navbar } from '../../component/navbar';
+import footer_abstract from '../../assets/footer_abstract.jpg';
+import poster1 from '../../assets/poster1.jpg';
 
 const Event = () => {
-  const { eventName } = useParams()
-  const event = eventData[eventName]
+  const { eventName } = useParams();
+  const navigate = useNavigate(); 
+  const event = eventData[eventName];
 
   if (!event) {
     return (
@@ -16,37 +20,74 @@ const Event = () => {
           </div>
         </div>
       </div>
-    )
+    );
   }
+
+  const handleExit = () => {
+    navigate("/#events"); 
+  };
 
   return (
     <>
       <BG />
-      <div className="book-content p-6 sm:p-12 md:p-16 font-bazingaItalic min-h-screen flex items-center justify-center">
-        <div className="w-full max-w-4xl bg-black bg-opacity-50 backdrop-filter backdrop-blur-md rounded-lg shadow-xl p-8">
-          <h1 className="text-4xl md:text-5xl text-center font-bazingaItalic text-white mb-4">{event.title}</h1>
-          <p className="text-lg md:text-xl text-center text-gray-300 mb-8 font-bazingaItalic">{event.tagline}</p>
+      <div className="book-content p-6 sm:p-12 md:p-16 font-bazingaItalic min-h-screen flex flex-col items-center justify-start pb-40">
+        <Navbar />
 
-          <div className="mb-8 font-bazingaItalic">
-            <h2 className="text-2xl text-white font-semibold mb-2 tracking-wider">Team Size</h2>
-            <p className="text-lg text-gray-300">{event.team_size}</p>
+        <div className="w-[87%] border-t-2 border-white mt-32 mb-0"></div>
+
+        <button
+          onClick={handleExit}
+          className="absolute top-52 left-40 bg-transparent text-white tracking-wider font-bazingaItalic font-bold py-4 px-6 text-xl border-2 hover:border-red-500 rounded-xl transition-all"
+        >
+          Exit
+        </button>
+
+        <div
+          className="w-full max-w-4xl relative bg-cover bg-center rounded-xl border-2 border-white p-8 mt-20 flex flex-col md:flex-row items-center md:items-start"
+          style={{ backgroundImage: `url(${footer_abstract})` }}
+        >
+          <div className="absolute inset-0 bg-black/80 rounded-lg"></div>
+          
+          <div className="w-full md:w-1/3 flex justify-center relative z-10">
+            <img src={poster1} alt="Event Poster" className="w-25 h-25 rounded-lg shadow-lg object-cover" />
           </div>
 
-          <div>
-            <h2 className="text-2xl text-white font-bazingaItalic mb-4">{event.rules.length > 0 && "Event Rules"}</h2>
-            <ul className="list-disc list-inside space-y-2">
-              {event.rules.map((rule, index) => (
-                <li key={index} className="text-lg text-gray-300 font-bazingaItalic">
-                  {rule}
-                </li>
-              ))}
-            </ul>
+          <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left mt-6 md:mt-0 md:ml-8 relative z-10">
+            <h1 className="text-4xl md:text-5xl font-bazingaItalic text-white">{event.title}</h1>
+            <p className="text-lg md:text-xl text-gray-300 mt-2 border-b-2 border-gray-500 pb-2">{event.tagline}</p>
+
+          
+
+            <div className="mt-6 text-justify">
+              <h2 className="text-2xl text-white font-semibold tracking-wider">Team Size ({event.team_size})</h2>
+              <h2 className="text-2xl text-white font-semibold tracking-wider">{event.timing}</h2>
+              <h2 className="text-2xl text-white font-semibold tracking-wider">{event.venue}</h2>
+              <h2 className="text-lg md:text-xl text-gray-300 mt-2 ">Event Head : {event.contact}</h2>
+              <h2 className="text-lg md:text-xl text-gray-300 mt-2 ">Contact : {event.num}</h2>
+              
+              <div className="flex justify-center mt-4">
+                <button
+                  onClick={() => console.log('Register')}
+                  className="text-lg md:text-xl font-bazingaItalic text-white border-2 border-white py-2 px-6 rounded-lg hover:border-red-500 transition-all"
+                >
+                  REGISTER
+                </button>
+              </div>
+            </div>
           </div>
+        </div>
+
+        <div className="w-full max-w-4xl border border-white rounded-lg p-6 mt-8 bg-black bg-opacity-50">
+          <h2 className="text-2xl text-white font-bazingaItalic mb-4">{event.rules.length > 0 && "Event Details"}</h2>
+          <ul className="list-disc list-inside space-y-2">
+            {event.rules.map((rule, index) => (
+              <li key={index} className="text-lg text-gray-300 text-justify">{rule}</li>
+            ))}
+          </ul>
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default Event
-
+export default Event;
