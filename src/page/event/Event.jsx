@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import BG from "../../component/bg/bg";
-import { eventData } from "../../eventData";
+import { eventData } from "@/lib/data";
 import { Navbar } from '../../component/navbar';
 import footer_abstract from '../../assets/footer_abstract.jpg';
 import poster1 from '../../assets/poster1.jpg';
