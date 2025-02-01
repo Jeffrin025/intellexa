@@ -49,7 +49,7 @@ const Event = () => {
           <div className="absolute inset-0 bg-black/80 rounded-lg"></div>
 
           <div className="w-full md:w-1/3 flex justify-center relative z-10">
-            <img src={poster1} alt="Event Poster" className="w-25 h-25 rounded-lg shadow-lg object-cover" />
+            <img src={event.poster} alt="Event Poster" className="w-25 h-25 rounded-lg shadow-lg object-cover" />
           </div>
 
           <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left mt-6 md:mt-0 md:ml-8 relative z-10">

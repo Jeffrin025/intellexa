@@ -1,5 +1,13 @@
 import card_abstract from "../assets/card_abstract.jpeg"
 import card_abstract_two from "../assets/card_abstract_two.jpg"
+import poster1 from '../assets/poster/poster1.png'
+import poster2 from '../assets/poster/poster2.png'
+import poster3 from '../assets/poster/poster3.png'
+import poster4 from '../assets/poster/poster4.png'
+import poster5 from '../assets/poster/poster5.png'
+import poster6 from '../assets/poster/poster6.png'
+import poster7 from '../assets/poster/poster7.png'
+import poster8 from '../assets/poster/poster8.png'
 export const eventCards = [
     { img: card_abstract, title: "CyberQuest", tagline: "Race Against Time, Conquer the Treasure!", team_size: 3, slug: "cyberquest", type: "event" },
     { img: card_abstract_two, title: "Aadukalam", tagline: "DSA Battlefield", team_size: "2 - 3", slug: "aadukalam", type: "event" },
@@ -17,6 +25,7 @@ export const eventData = {
         img: 'card_abstract',
         title: 'CyberQuest',
         tagline: "Race Against Time, Conquer the Treasure!",
+        poster: poster8,
         team_size: 3,
         contact: "Madhan",
         num: '9655221183',
@@ -39,6 +48,7 @@ export const eventData = {
         img: 'card_abstract_two',
         title: 'Aadukalam',
         tagline: "DSA Battlefield",
+        poster: poster8,
         team_size: '1',
         contact: "SaiVishwa",
         num: '7200231133',
@@ -64,6 +74,7 @@ export const eventData = {
         title: 'Database Design Duel',
         tagline: "Two Minds, One Database - Will Yours Lead the Way?",
         team_size: 2,
+        poster: poster3,
         contact: "Jagadeshwaran R P",
         num: '8825704232',
         description: 'Join the ultimate 2-hour challenge where teams race against the clock to design the most efficient, scalable, and innovative database schema. With a real-world problem to solve, this event tests your creativity, technical skills, and ability to think on your feet. Collaborate, compete, and see who will be crowned the ultimate DB architect!',
@@ -86,6 +97,7 @@ export const eventData = {
         title: 'Flutter Frenzy',
         tagline: "Flutter Your Way to Innovation",
         team_size: 1,
+        poster: poster6,
         contact: "Daksh",
         num: '6379781318',
         description: 'A workshop covering Flutter fundamentals and building basic apps.',
@@ -104,6 +116,7 @@ export const eventData = {
         title: 'Web Wizard Relay',
         tagline: "Code. Collaborate. Create.",
         team_size: 1,
+        poster: poster5,
         contact: "Jeffrin",
         num: '6383381719',
         description: 'The web relay is a dynamic 3-hour coding event where teams of two collaboratively build a website based on a given theme. Each team member alternates coding every 30 minutes, with only 10 minutes allowed for initial discussion. Communication during the competition is strictly through code comments',
@@ -128,6 +141,7 @@ export const eventData = {
         title: 'Pixel Verse',
         tagline: 'Please provide tagline',
         team_size: 1,
+        poster: poster7,
         contact: "Krithika",
         num: '6369795633',
         description: `This workshop covers essential techniques, from mastering ISO, aperture, and shutter speed to capturing perfect candid and posed shots. Participants will engage in live practice sessions, interactive quizzes, and receive real-time feedback. Whether you’re a beginner or an enthusiast, this event offers expert insights, practical learning, and networking opportunities. Plus, stand a chance to win exciting prizes and get a participation certificate!`,
@@ -145,6 +159,7 @@ export const eventData = {
     'chamber-of-secrets': {
         img: 'card_abstract_two',
         title: 'Chamber of Secrets',
+        poster: poster2,
         tagline: "Time's Not Your Friend—But Your Mind Might Be!",
         team_size: 2,
         contact: "Prinkayatthra D",
@@ -166,6 +181,7 @@ export const eventData = {
         img: 'card_abstract_two',
         title: 'Pitch perfect',
         tagline: "Express Ideas, Inspire Minds",
+        poster: poster4,
         team_size: '3 - 5',
         contact: "Avinash",
         num: '9080538459',
@@ -199,6 +215,7 @@ export const eventData = {
         img: 'card_abstract_two',
         title: 'Beyond the Screen: 3D Web Design Mastery',
         tagline: "From Concept to Creation: Shaping Brands of Tomorrow.",
+        poster: poster1,
         team_size: 1,
         contact: "Maria Darsha",
         num: '7604899016',

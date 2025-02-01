@@ -9,27 +9,27 @@ import EarthCanvas from "./canvas/Earth";
 const data = [
   {
     id: 0,
-    title: "Mission",
+    title: "Enlightenment",
     img: one,
-    passage: "Our mission is to foster a collaborative environment where students can explore and innovate in the field of technology. We strive to provide opportunities for hands-on learning, skill development, and professional growth.",
+    passage: "We are dedicated to providing platforms for knowledge sharing. Our events feature expert speakers, insightful panels, and interactive sessions that offer valuable industry insights, covering everything from emerging trends to advanced concepts.",
   },
   {
     id: 1,
-    title: "Projects",
+    title: "Synergy",
     img: one,
-    passage: "Our club is proud to lead several innovative projects such as our annual coding bootcamp, a community-driven open-source software initiative, and partnerships with local tech firms for real-world problem-solving.",
+    passage: "We understand the power of networking. Our events provide opportunities to meet like-minded individuals, exchange ideas, and form lasting professional relationships that can lead to collaborations and new ventures.",
   },
   {
     id: 2,
-    title: "Opportunities",
+    title: "Skillcraft",
     img: one,
-    passage: "We offer numerous opportunities for members to get involved, from leading special projects and joining committees to participating in mentorship programs. Engaging with these opportunities not only helps you develop valuable skills but also enhances your networking and professional growth within the tech community.",
+    passage: "We host specialized workshops and hands-on sessions focused on practical learning. Whether you're looking to upgrade your skills or explore new areas, our carefully curated workshops cater to diverse fields, ensuring growth and expertise.",
   },
   {
     id: 3,
-    title: "Team",
+    title: "Innovation",
     img: one,
-    passage: "We are a team of passionate individuals committed to delivering innovative solutions. Our journey has been one of growth, learning, and collaboration, and we continue to strive towards making a positive impact in the tech world.",
+    passage: "We are a space where innovation and creativity thrive. By bringing together thought leaders and visionaries, we inspire fresh ideas and solutions that challenge the status quo and drive progress in various industries.",
   },
 ];
 
