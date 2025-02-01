@@ -4,7 +4,6 @@ import { useState } from "react"
 import { MoveUpRight, X } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { useNavigate } from "react-router-dom"
-import { API_URL } from "@/lib/config"
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -24,7 +23,7 @@ export function Navbar() {
         <div className="flex space-x-2 items-center">
           <button
             className="rounded-lg text-white border px-5 py-3 font-extralight flex space-x-3 items-center group"
-            onClick={() => console.log("clicked")}
+            onClick={() => navigate("/register")}
           >
             Register Now
           </button>

@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
-import { useNavigate } from "react-router-dom";
 
 export const EventCard = ({ img, title, tagLine, team_size, slug }) => {
     const [isHovered, setIsHovered] = useState(false);
-    const navigate = useNavigate();
     return (
         <div
             className="max-w-[500px] w-full aspect-[4/5] rounded-2xl relative bg-cover bg-center cursor-pointer z-50"
@@ -39,10 +37,6 @@ export const EventCard = ({ img, title, tagLine, team_size, slug }) => {
                         <Link to={`/event/${slug}`} className="border px-4 py-2 rounded-2xl border-white/15 hover:bg-white hover:text-black text-white transition-colors text-xs md:text-sm">
                             More info
                         </Link>
-                        <button className="border px-4 py-2 rounded-2xl border-white/15 hover:bg-white hover:text-black text-white transition-colors text-xs md:text-sm"
-                        onClick={() => navigate(`/register/${slug}`)}>
-                            Register
-                        </button>
                     </div>
                 </div>
             </motion.div>

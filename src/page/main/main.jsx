@@ -1,5 +1,5 @@
 import Home from '../home/Home'
-import About from '../about/about'
+import About from '../../component/about'
 import { Events } from '../../component/events'
 import { Footer } from '../../component/footer'
 

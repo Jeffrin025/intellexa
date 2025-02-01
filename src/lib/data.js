@@ -1,3 +1,17 @@
+import card_abstract from "../assets/card_abstract.jpeg"
+import card_abstract_two from "../assets/card_abstract_two.jpg"
+export const eventCards = [
+    { img: card_abstract, title: "CyberQuest", tagline: "Race Against Time, Conquer the Treasure!", team_size: 3, slug: "cyberquest", type: "event" },
+    { img: card_abstract_two, title: "Aadukalam", tagline: "DSA Battlefield", team_size: "2 - 3", slug: "aadukalam", type: "event" },
+    { img: card_abstract, title: "Database Design Duel", tagline: "Two Minds, One Database - Will Yours Lead the Way?", team_size: 2, slug: "database-duel-design", type: "event" },
+    { img: card_abstract_two, title: "Flutter Frenzy", tagline: "Flutter Your Way to Innovation", team_size: 1, slug: "flutter-frenzy", type: "workshop" },
+    { img: card_abstract_two, title: "Web Wizard Relay", tagline: "Code. Collaborate. Create.", team_size: 1, slug: "web-wizard-relay", type: "event" },
+    { img: card_abstract_two, title: "Pixel Verse", tagline: "Please provide tagline", team_size: 1, slug: "pixel-verse", type: "event" },
+    { img: card_abstract_two, title: "Chamber of Secrets", tagline: "Time's Not Your Friend—But Your Mind Might Be!", team_size: 2, slug: "chamber-of-secrets", type: "event" },
+    { img: card_abstract_two, title: "Pitch perfect", tagline: "Express Ideas, Inspire Minds", team_size: "3 - 5", slug: "pitch-perfect", type: "event" },
+    { img: card_abstract_two, title: "Beyond the Screen: 3D Web Design Mastery", tagline: "From Concept to Creation: Shaping Brands of Tomorrow.", team_size: 1, slug: "beyond-the-screen", type: "workshop" },
+]
+
 export const eventData = {
     'cyberquest': {
         img: 'card_abstract',
@@ -16,13 +30,16 @@ export const eventData = {
             'Teams will be judged based on how many clues they solve and the number of hints used.',
         ],
         venue: '-',
-        timing: '11:45 AM - 2:00 PM'
+        timing: '11:45 AM - 2:00 PM',
+        type: "event",
+        slot: 2,
+        gform: "gform link here for slot 2"
     },
     'aadukalam': {
         img: 'card_abstract_two',
         title: 'Aadukalam',
         tagline: "DSA Battlefield",
-        team_size: '2 - 3',
+        team_size: '1',
         contact: "SaiVishwa",
         num: '7200231133',
         description: 'the short description is long enough ig',
@@ -37,7 +54,10 @@ export const eventData = {
             '  A 100 INR entry fee is required to participate in Round 2.',
         ],
         venue: 'KS03',
-        timing: '9:00 AM - 11:30 AM'
+        timing: '9:00 AM - 11:15 AM',
+        type: "event",
+        slot: 1,
+        gform: "separate gform link here for slot aadukalam"
     },
     'database-duel-design': {
         img: 'card_abstract',
@@ -56,7 +76,10 @@ export const eventData = {
             'Evaluation will be based on the efficiency, scalability, and creativity of the database design.',
         ],
         venue: 'TLGL 1',
-        timing: '9:00 AM - 11:15 AM'
+        timing: '9:00 AM - 11:15 AM',
+        type: "event",
+        slot: 1,
+        gform: "gform link here for slot 1"
     },
     'flutter-frenzy': {
         img: 'card_abstract_two',
@@ -71,7 +94,10 @@ export const eventData = {
             'Participants must complete all necessary installations prior to the event.',
         ],
         venue: 'A105',
-        timing: '9:00 AM - 3:00 PM'
+        timing: '9:00 AM - 3:00 PM',
+        type: "workshop",
+        slot: -1,
+        gform: "gform link here for workshop"
     },
     'web-wizard-relay': {
         img: 'card_abstract_two',
@@ -92,7 +118,10 @@ export const eventData = {
             'The event will be judged based on creativity, functionality, and adherence to the theme.',
         ],
         venue: 'KS03',
-        timing: '11:45 AM - 2:00 PM'
+        timing: '11:45 AM - 2:00 PM',
+        type: "event",
+        slot: 2,
+        gform: "gform link here for slot 2"
     },
     'pixel-verse': {
         img: 'card_abstract_two',
@@ -109,7 +138,9 @@ export const eventData = {
             'Follow the workshop guidelines and respect fellow participants and mentors.',
         ],
         venue: '-',
-        timing: '9:00 AM - 3:00 PM'
+        timing: '9:00 AM - 3:00 PM',
+        slot: -1,
+        gform: "gform link here for workshop"
     },
     'chamber-of-secrets': {
         img: 'card_abstract_two',
@@ -126,7 +157,10 @@ export const eventData = {
             'Each team can request only one clue, which will incur a 5-minute time penalty.',
         ],
         venue: '-',
-        timing: '9:00 AM - 11:00 AM'
+        timing: '9:00 AM - 11:15 AM',
+        type: "event",
+        slot: 1,
+        gform: "gform link here for slot 1"
     },
     'pitch-perfect': {
         img: 'card_abstract_two',
@@ -146,8 +180,20 @@ export const eventData = {
             'The use of offensive or inappropriate content is strictly prohibited.',
             'The judge\'s decisions will be final and binding.',
         ],
+        theme: [
+            'Good Health and Well - being - Innovate solutions to enhance healthcare accessibility, efficiency, and patient outcomes.',
+            'Quality Education - Develop technologies to improve learning experiences, accessibility, and education equity.',
+            'Industry, Innovation, and Infrastructure - Build smart, sustainable, and resilient industrial and infrastructure solutions.',
+            'Climate Action - Create tech - driven solutions to combat climate change and promote sustainability.',
+            'Affordable and Clean Energy - Innovate for sustainable, accessible, and efficient energy solutions.',
+            'Artificial Intelligence - Leverage AI to solve real- world challenges across various domains.',
+            'Open Track - Explore and innovate in any impactful area beyond the defined themes.',
+        ],
         venue: '-',
-        timing: '9:00 AM -2:00 PM'
+        timing: '9:00 AM -1:30 PM',
+        type: "ideathon",
+        slot: -1,
+        gform: "gform link here for workshop"
     },
     'beyond-the-screen': {
         img: 'card_abstract_two',
@@ -159,6 +205,9 @@ export const eventData = {
         description: 'Pathway to ideate the marketing path for a product and brand marketing strategies along with entrepreneurship tips and Having an activity which will give the students the creative freedom to create their own logo for the brand or product they are given',
         rules: [],
         venue: 'KS01',
-        timing: '9:00 AM - 2:00 PM'
+        timing: '9:00 AM - 3:00 PM',
+        type: "workshop",
+        slot: -1,
+        gform: "gform link for workshop"
     },
 };
