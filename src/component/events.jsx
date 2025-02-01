@@ -47,13 +47,37 @@ export const Events = () => {
           variants={cardVariants(0)}
           className="text-white w-full text-center my-10 lg:text-[100px] md:text-[80px] text-[50px]"
         >
-          Events
+        Tech Events
         </motion.h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12 md:gap-16 lg:gap-24">
           {eventCards
             .filter((card) => card.type === "event")
             .map((card, index) => (
               <motion.div key={card.slug} variants={cardVariants(index + 1)}>
+                <EventCard
+                  img={card.img}
+                  title={card.title}
+                  tagLine={card.tagline}
+                  team_size={card.team_size}
+                  slug={card.slug}
+                />
+              </motion.div>
+            ))}
+        </div>
+        <motion.h2
+          variants={cardVariants(eventCards.filter((card) => card.type === "event").length + 1)}
+          className="text-white w-full text-center my-5 lg:text-[100px] md:text-[80px] text-[50px]"
+        >
+          Non-Tech Events
+        </motion.h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12 md:gap-16 lg:gap-24">
+          {eventCards
+            .filter((card) => card.type === "non-tech")
+            .map((card, index) => (
+              <motion.div
+                key={card.slug}
+                variants={cardVariants(eventCards.filter((card) => card.type === "non-tech").length + index + 3)}
+              >
                 <EventCard
                   img={card.img}
                   title={card.title}

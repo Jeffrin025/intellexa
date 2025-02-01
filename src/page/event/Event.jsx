@@ -33,15 +33,6 @@ const Event = () => {
       <div className="book-content relative p-6 sm:p-12 md:p-16 font-bazingaItalic min-h-screen flex flex-col items-center justify-start pb-40">
         <Navbar />
 
-        <div className="w-[87%] border-t-2 border-white mt-32 mb-0"></div>
-
-        <button
-          onClick={handleExit}
-          className="absolute bg-transparent text-white tracking-wider font-bazingaItalic font-bold py-4 px-6 text-xl border-2 hover:border-red-500 rounded-xl transition-all"
-        >
-          Exit
-        </button>
-
         <div
           className="w-full max-w-4xl relative bg-cover bg-center rounded-xl border-2 border-white p-8 mt-20 flex flex-col md:flex-row items-center md:items-start"
           style={{ backgroundImage: `url(${footer_abstract})` }}

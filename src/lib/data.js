@@ -14,8 +14,8 @@ export const eventCards = [
     { img: card_abstract, title: "Database Design Duel", tagline: "Two Minds, One Database - Will Yours Lead the Way?", team_size: 2, slug: "database-duel-design", type: "event" },
     { img: card_abstract_two, title: "Flutter Frenzy", tagline: "Flutter Your Way to Innovation", team_size: 1, slug: "flutter-frenzy", type: "workshop" },
     { img: card_abstract_two, title: "Web Wizard Relay", tagline: "Code. Collaborate. Create.", team_size: 1, slug: "web-wizard-relay", type: "event" },
-    { img: card_abstract_two, title: "Pixel Verse", tagline: "Please provide tagline", team_size: 1, slug: "pixel-verse", type: "event" },
-    { img: card_abstract_two, title: "Chamber of Secrets", tagline: "Time's Not Your Friend—But Your Mind Might Be!", team_size: 2, slug: "chamber-of-secrets", type: "event" },
+    { img: card_abstract_two, title: "Pixel Verse", tagline: "Please provide tagline", team_size: 1, slug: "pixel-verse", type: "non-tech" },
+    { img: card_abstract_two, title: "Chamber of Secrets", tagline: "Time's Not Your Friend—But Your Mind Might Be!", team_size: 2, slug: "chamber-of-secrets", type: "non-tech" },
     { img: card_abstract_two, title: "Pitch perfect", tagline: "Express Ideas, Inspire Minds", team_size: "3 - 5", slug: "pitch-perfect", type: "event" },
     { img: card_abstract_two, title: "Beyond the Screen: 3D Web Design Mastery", tagline: "From Concept to Creation: Shaping Brands of Tomorrow.", team_size: 1, slug: "beyond-the-screen", type: "workshop" },
 ]
@@ -173,7 +173,7 @@ export const eventData = {
         ],
         venue: '-',
         timing: '9:00 AM - 11:15 AM',
-        type: "event",
+        type: "non-tech",
         slot: 1,
         gform: "gform link here for slot 1"
     },
@@ -223,7 +223,7 @@ export const eventData = {
         rules: [],
         venue: 'KS01',
         timing: '9:00 AM - 3:00 PM',
-        type: "workshop",
+        type: "non-tech",
         slot: -1,
         gform: "gform link for workshop"
     },
