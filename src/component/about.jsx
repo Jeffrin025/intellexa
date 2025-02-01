@@ -6,6 +6,8 @@ import one from "../assets/7.png"
 import AboutCard from "./aboutuscard";
 import EarthCanvas from "./canvas/Earth";
 
+//check
+
 const data = [
   {
     id: 0,
