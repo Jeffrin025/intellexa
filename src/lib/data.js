@@ -113,7 +113,7 @@ export const eventData = {
             'Participants must complete all necessary installations prior to the event.',
         ],
         venue: 'A105',
-        timing: '9:00 AM - 3:00 PM',
+        timing: '9:00 AM - 2:00 PM',
         type: "workshop",
         slot: -1,
         gform: "gform link here for workshop"
@@ -159,7 +159,7 @@ export const eventData = {
             'Follow the workshop guidelines and respect fellow participants and mentors.',
         ],
         venue: '-',
-        timing: '9:00 AM - 3:00 PM',
+        timing: '9:00 AM - 2:00 PM',
         slot: -1,
         gform: "gform link here for workshop"
     },
@@ -227,9 +227,12 @@ export const eventData = {
         contact: "Maria Darsha",
         num: '7604899016',
         description: 'Pathway to ideate the marketing path for a product and brand marketing strategies along with entrepreneurship tips and Having an activity which will give the students the creative freedom to create their own logo for the brand or product they are given',
-        rules: [],
+        rules: [
+            'Participants must bring their own laptop to the event.',
+            
+        ],
         venue: 'KS01',
-        timing: '9:00 AM - 3:00 PM',
+        timing: '9:00 AM - 2:00 PM',
         type: "non-tech",
         slot: -1,
         gform: "gform link for workshop"

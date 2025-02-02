@@ -48,7 +48,7 @@ const Event = () => {
             <div className="mt-6 text-justify">
               <h2 className="text-2xl text-white font-semibold tracking-wider">Team Size ({event.team_size})</h2>
               <h2 className="text-2xl text-white font-semibold tracking-wider">{event.timing}</h2>
-              <h2 className="text-2xl text-white font-semibold tracking-wider">{event.venue}</h2>
+              {/* <h2 className="text-2xl text-white font-semibold tracking-wider">{event.venue}</h2> */}
               <h2 className="text-lg md:text-xl text-gray-300 mt-2">Event Head : {event.contact}</h2>
               <h2 className="text-lg md:text-xl text-gray-300 mt-2">Contact : {event.num}</h2>
               <div className="flex justify-center space-x-2 mt-4">
