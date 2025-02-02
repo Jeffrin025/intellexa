@@ -56,7 +56,7 @@ function FullScreenMenu({ setIsMenuOpen }) {
     >
       <nav className="text-4xl space-y-8 font-bazingaItalic text-center">
         <motion.a
-          href="#home"
+          href="/#home"
           className="block hover:text-gray-300 transition-colors"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -66,7 +66,7 @@ function FullScreenMenu({ setIsMenuOpen }) {
           Home
         </motion.a>
         <motion.a
-          href="#about"
+          href="/#about"
           className="block hover:text-gray-300 transition-colors"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -76,7 +76,7 @@ function FullScreenMenu({ setIsMenuOpen }) {
           About
         </motion.a>
         <motion.a
-          href="#events"
+          href="/#events"
           className="block hover:text-gray-300 transition-colors"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -86,7 +86,7 @@ function FullScreenMenu({ setIsMenuOpen }) {
           Events
         </motion.a>
         <motion.a
-          href="#contact"
+          href="/#contact"
           className="block hover:text-gray-300 transition-colors"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
