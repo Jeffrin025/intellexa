@@ -3,7 +3,7 @@ import card_abstract_two from "../assets/card_abstract_two.jpg"
 import card_abstract_three from "../assets/card_abstract_three.jpg"
 import card_abstract_four from "../assets/card_abstract_four.jpg"
 import card_abstract_five from "../assets/card_abstract_five.jpg"
-import card_abstract_six from "../assets/card_abstract_siz.jpg"
+import card_abstract_six from "../assets/card_abstract_six.jpg"
 import card_abstract_seven from "../assets/card_abstract_seven.jpg"
 import card_abstract_eight from "../assets/card_abstract_eight.jpg"
 import poster1 from '../assets/poster/poster1.png'
@@ -22,7 +22,7 @@ export const eventCards = [
     { img: card_abstract_five, title: "Web Wizard Relay", tagline: "Code. Collaborate. Create.", team_size: 1, slug: "web-wizard-relay", type: "event" },
     { img: card_abstract_six, title: "Pixel Verse", tagline: "Please provide tagline", team_size: 1, slug: "pixel-verse", type: "non-tech" },
     { img: card_abstract_seven, title: "Chamber of Secrets", tagline: "Time's Not Your Friend—But Your Mind Might Be!", team_size: 2, slug: "chamber-of-secrets", type: "non-tech" },
-    { img: card_abstract_seven, title: "Pitch perfect", tagline: "Express Ideas, Inspire Minds", team_size: "3 - 5", slug: "pitch-perfect", type: "event" },
+    { img: card_abstract_eight, title: "Pitch perfect", tagline: "Express Ideas, Inspire Minds", team_size: "3 - 5", slug: "pitch-perfect", type: "event" },
     { img: card_abstract, title: "Beyond the Screen: 3D Web Design Mastery", tagline: "From Concept to Creation: Shaping Brands of Tomorrow.", team_size: 1, slug: "beyond-the-screen", type: "workshop" },
 ]
 
