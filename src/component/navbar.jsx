@@ -13,12 +13,12 @@ export function Navbar() {
   return (
     <>
       <motion.div
-        className="flex justify-between items-center w-full overflow-x-hidden py-10 lg:px-16 md:px-10 px-5 font-bazingaItalic absolute top-0 left-0 z-50"
+        className="flex justify-between items-center w-full overflow-hidden py-10 lg:px-16 md:px-10 px-5 font-bazingaItalic absolute top-0 left-0 z-50"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="md:w-36 md:h-14 w-24 h-10 flex items-center">
+        <div className="md:w-36 w-24 h-5 flex items-center">
           <img src={intellexa_white} alt="logo" className="scale-[2]"/>
         </div>
         <div className="flex space-x-2 items-center">
