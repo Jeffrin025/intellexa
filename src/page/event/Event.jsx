@@ -3,11 +3,9 @@ import BG from "../../component/bg/bg";
 import { eventData } from "@/lib/data";
 import { Navbar } from '../../component/navbar';
 import footer_abstract from '../../assets/footer_abstract.jpg';
-import poster1 from '../../assets/poster1.jpg';
 
 const Event = () => {
   const { eventName } = useParams();
-  const navigate = useNavigate();
   const event = eventData[eventName];
 
   if (!event) {
