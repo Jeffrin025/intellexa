@@ -1,5 +1,6 @@
 import React from "react"
 import footer_abstract from "../assets/footer_abstract.jpg"
+import ieee_cs from "../assets/ieee_cs.png"
 
 export const Footer = () => {
     return (
@@ -11,6 +12,16 @@ export const Footer = () => {
                     style={{ backgroundImage: `url(${footer_abstract})` }}
                 >
                     <div className="absolute inset-0 bg-black/80 rounded-[50px]"></div>
+                    <div className="pl-10 w-full pt-6 text-white flex flex-col gap-2 absolute">
+                        <div>Our Sponsor</div>
+                        <div className=" rounded-lg p-2 w-40 bg-white">
+                            <img
+                                src={ieee_cs}
+                                alt="ieee_cs_logo"
+                                className=" w-32 scale- object-contain"
+                            />
+                        </div>
+                    </div>
                     <div className="absolute bottom-0 left-8 h-[30%] overflow-hidden">
                         <div
                             className="md:text-[100px] text-[60px] leading-none tracking-wide whitespace-nowrap "

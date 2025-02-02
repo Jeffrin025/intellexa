@@ -47,7 +47,7 @@ export const Events = () => {
           variants={cardVariants(0)}
           className="text-white w-full text-center my-10 lg:text-[100px] md:text-[80px] text-[50px]"
         >
-        Tech Events
+          Tech Events
         </motion.h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12 md:gap-16 lg:gap-24">
           {eventCards
@@ -119,12 +119,8 @@ export const Events = () => {
             ))}
         </div>
       </motion.div>
-      <div>
-        Sponsors
-      </div>
     </div>
   )
 }
-
 export default Events
 
