@@ -23,14 +23,10 @@ const Event = () => {
     );
   }
 
-  const handleExit = () => {
-    navigate("/#events");
-  };
-
   return (
     <>
       <BG />
-      <div className="book-content relative p-6 sm:p-12 md:p-16 font-bazingaItalic min-h-screen flex flex-col items-center justify-start pb-40">
+      <div className="relative p-6 sm:p-12 md:p-16 font-bazingaItalic min-h-screen w-screen flex flex-col  items-center justify-center pb-40">
         <Navbar />
 
         <div
