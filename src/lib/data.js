@@ -14,6 +14,7 @@ import poster5 from '../assets/poster/poster5.png'
 import poster6 from '../assets/poster/poster6.png'
 import poster7 from '../assets/poster/poster7.png'
 import poster8 from '../assets/poster/poster8.png'
+import poster10 from '../assets/poster/poster10.png'
 export const eventCards = [
     { img: card_abstract, title: "CyberQuest", tagline: "Race Against Time, Conquer the Treasure!", team_size: "2 - 3", slug: "cyberquest", type: "event" },
     { img: card_abstract_two, title: "Aadukalam", tagline: "DSA Battlefield", team_size: 1, slug: "aadukalam", type: "event" },
@@ -54,7 +55,7 @@ export const eventData = {
         img: 'card_abstract_two',
         title: 'Aadukalam',
         tagline: "DSA Battlefield",
-        poster: poster8,
+        poster: poster10,
         team_size: '1',
         contact: "SaiVishwa",
         num: '7200231133',
