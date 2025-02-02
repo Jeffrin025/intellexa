@@ -25,6 +25,16 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "clashDisplay";
+  src: url("/fonts/clashDisplay.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "satoshi";
+  src: url("/fonts/satoshi.ttf") format("truetype");
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

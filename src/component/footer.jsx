@@ -1,6 +1,9 @@
 import React from "react"
 import footer_abstract from "../assets/footer_abstract.jpg"
 import ieee_cs from "../assets/ieee_cs.png"
+import jeffrin from "../assets/1.png"
+import sai from "../assets/5.png"
+import prasanth from "../assets/7.png"
 
 export const Footer = () => {
     return (
@@ -22,16 +25,16 @@ export const Footer = () => {
                             />
                         </div>
                         <div>
-                                <p className="text-xl mb-2">Contact Us</p>
-                                <div className="flex items-center space-x-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="white" fill="none" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-                                    </svg>
-                                    <a href="mailto:intellexa@rajalakshmi.edu.in" className="hover:underline">
-                                        intellexa@rajalakshmi.edu.in
-                                    </a>
-                                </div>
+                            <p className="text-xl mb-2">Contact Us</p>
+                            <div className="flex items-center space-x-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="white" fill="none" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                                </svg>
+                                <a href="mailto:intellexa@rajalakshmi.edu.in" className="hover:underline">
+                                    intellexa@rajalakshmi.edu.in
+                                </a>
                             </div>
+                        </div>
                     </div>
                     <div className="absolute bottom-0 left-8 h-[30%] overflow-hidden">
                         <div
@@ -60,6 +63,25 @@ export const Footer = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div className="border-t py-5 border-white/20 text-white md:flex items-center justify-center font-satoshi flex-col text-center space-y-2">
+                <div>
+                    Design and Developed by
+                </div>
+                <div className="flex justify-center items-center">
+                    <span className="px-1">
+                        <img src={jeffrin} alt="jeffrin" width={20} height={17} />
+                    </span>
+                    <a href="https://www.linkedin.com/in/jeffrin-p-06064a253/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="font-semibold">Jeffrin, </a>
+                    <span className="px-1">
+                        <img src={sai} alt="sai" width={20} height={25} />
+                    </span>
+                    <a href="https://www.linkedin.com/in/saivishwaram-ramkumar-a74123260/" className="font-semibold"> Saivishwa and</a>
+                    <span className="px-1">
+                        <img src={prasanth} alt="prasanth" width={20} height={17} />
+                    </span>
+                    <a href="https://github.com/Prasanth-S7/" className="font-semibold"> Prasanth</a>
                 </div>
             </div>
         </footer>

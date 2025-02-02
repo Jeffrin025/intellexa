@@ -2,7 +2,7 @@ import { useState } from "react"
 import { MoveUpRight, X } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { useNavigate } from "react-router-dom"
-import intellexa_logo from "@/assets/intellexa_logo.png"
+import intellexa_white from "@/assets/intellexa_white.png"
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -18,12 +18,12 @@ export function Navbar() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="md:w-36 md:h-14 w-24 h-10 overflow-hidden flex items-center">
-          <img src={intellexa_logo} alt="logo" />
+        <div className="md:w-36 md:h-14 w-24 h-10 flex items-center">
+          <img src={intellexa_white} alt="logo" className="scale-[2]"/>
         </div>
         <div className="flex space-x-2 items-center">
           <button
-            className="rounded-lg text-white border px-5 py-3 font-extralight flex space-x-3 items-center group"
+            className="rounded-lg text-white border px-5 py-3 font-extralight md:flex space-x-3 items-center group hidden "
             onClick={() => navigate("/register")}
           >
             Register Now

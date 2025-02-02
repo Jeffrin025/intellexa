@@ -12,6 +12,14 @@ export default {
         bazingaItalic: [
           'bazingaItalic',
           'sans-serif'
+        ],
+        clashDisplay: [
+          'clashDisplay',
+          'sans-serif'
+        ],
+        satoshi: [
+          'satoshi',
+          'sans-serif'
         ]
     },
     borderRadius: {

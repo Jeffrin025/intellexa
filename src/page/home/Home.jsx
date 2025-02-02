@@ -3,6 +3,7 @@ import BG from '../../component/bg/bg';
 import background_image from '../../assets/background_image.jpg';
 import { Navbar } from '../../component/navbar';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
   const container = {
@@ -31,6 +32,7 @@ const Home = () => {
 
   const letters = "Resonance 25".split('');
   const tagLine = "Ignite Ideas, Innovate future".split('');
+  const navigate = useNavigate();
 
   return (
     <>
@@ -48,7 +50,15 @@ const Home = () => {
             className="absolute inset-0 w-full h-full object-cover opacity-50"
           />
           <div className="relative z-10 text-center pb-10 -mb-10 lg:-mb-24">
-            <motion.div 
+            <div className='pl-4 mb-2 md:hidden'>
+              <button
+                className="rounded-lg text-white border-2 px-5 py-3 font-extralight flex space-x-3 items-center group font-bazingaItalic"
+                onClick={() => navigate("/register")}
+              >
+                Register Now
+              </button>
+            </div>
+            <motion.div
               className='lg:pl-20 pl-4 text-left lg:-mb-10'
               variants={container}
               initial="hidden"
@@ -82,7 +92,7 @@ const Home = () => {
             </motion.h1>
           </div>
         </div>
-      </div>
+      </div >
     </>
   );
 };
