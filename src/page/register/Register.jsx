@@ -30,7 +30,8 @@ export const Register = () => {
             <div className="flex flex-col items-center p-8 border border-white/20 rounded-xl backdrop-blur-sm hover:border-white/40 transition-all min-h-[250px] justify-between">
               <div className="text-center">
                 <h1 className="text-2xl md:text-3xl mb-6">Register for Workshops</h1>
-                <span className="text-white/80">Only for REC students</span>
+                <span className="text-white/80">Only for REC students</span><br />
+                <span className="text-white/80">Registration opens from Feb 9</span>
               </div>
               <a
                 className="w-full rounded-lg border border-white/60 px-5 py-3 font-extralight 
