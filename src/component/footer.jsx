@@ -67,7 +67,7 @@ export const Footer = () => {
             </div>
             <div className="border-t py-5 border-white/20 text-white md:flex items-center justify-center font-satoshi flex-col text-center space-y-2">
                 <div>
-                    Design and Developed by
+                    Designed and Developed by
                 </div>
                 <div className="flex justify-center items-center">
                     <span className="px-1">
