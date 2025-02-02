@@ -159,7 +159,7 @@ export const eventData = {
             'Follow the workshop guidelines and respect fellow participants and mentors.',
         ],
         venue: '-',
-        timing: '9:00 AM - 3:00 PM',
+        timing: '9:00 AM - 2:00 PM',
         slot: -1,
         gform: "gform link here for workshop"
     },
@@ -170,7 +170,7 @@ export const eventData = {
         tagline: "Time's Not Your Friend—But Your Mind Might Be!",
         team_size: 2,
         contact: "Prinkayatthra D",
-        num: 'Prinkayatthra D',
+        num: '7010365176',
         description: 'Participants will navigate a series of puzzles and challenges to "escape" from a simulated scenario. Each stage will test their reading, writing, listening, and speaking, immersing them in a thrilling race against time.',
         rules: [
             'Teams must consist of 2 participants.',
