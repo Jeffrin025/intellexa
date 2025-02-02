@@ -229,7 +229,15 @@ export const eventData = {
         description: 'Pathway to ideate the marketing path for a product and brand marketing strategies along with entrepreneurship tips and Having an activity which will give the students the creative freedom to create their own logo for the brand or product they are given',
         rules: [
             'Participants must bring their own laptop to the event.',
-            
+            'Each team must consist of 3 participants.',
+            'The event involves three elements: Eyes, Mouth, and Work. Participants will draw a chit to determine which product they will design a logo for.',
+            'One participant will have their eyes blindfolded.',
+            'A second participant will have their mouth closed.',
+            'The third participant will be responsible for creating the logo.',
+            'Roles will rotate in the following order: Eyes → Logo → Mouth.',
+            'Each participant will take turns in the designated order for their tasks.',
+            'During the event, distractions or hurdles will be introduced at intervals, which the team must overcome while completing their tasks.'
+        
         ],
         venue: 'KS01',
         timing: '9:00 AM - 2:00 PM',
