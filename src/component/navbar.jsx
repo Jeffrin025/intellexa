@@ -1,9 +1,8 @@
-"use client"
-
 import { useState } from "react"
 import { MoveUpRight, X } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { useNavigate } from "react-router-dom"
+import intellexa_logo from "@/assets/intellexa_logo.png"
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -19,7 +18,9 @@ export function Navbar() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="text-white">Logo</div>
+        <div className="w-36 h-14 overflow-hidden">
+          <img src={intellexa_logo} alt="logo" />
+        </div>
         <div className="flex space-x-2 items-center">
           <button
             className="rounded-lg text-white border px-5 py-3 font-extralight flex space-x-3 items-center group"
