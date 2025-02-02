@@ -134,7 +134,7 @@ export const eventData = {
             'Communication is allowed only through code comments.',
             'The theme will be provided on the event day.',
             'AI tools, such as ChatGPT, can be used during the event.',
-            'An bOnus quiz will be included to boost final scores.',
+            'An bonus quiz will be included to boost final scores.',
             'The event will be judged based on creativity, functionality, and adherence to the theme.',
         ],
         venue: 'KS03',
