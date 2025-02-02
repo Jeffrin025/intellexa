@@ -15,12 +15,12 @@ import poster6 from '../assets/poster/poster6.png'
 import poster7 from '../assets/poster/poster7.png'
 import poster8 from '../assets/poster/poster8.png'
 export const eventCards = [
-    { img: card_abstract, title: "CyberQuest", tagline: "Race Against Time, Conquer the Treasure!", team_size: 3, slug: "cyberquest", type: "event" },
-    { img: card_abstract_two, title: "Aadukalam", tagline: "DSA Battlefield", team_size: "2 - 3", slug: "aadukalam", type: "event" },
+    { img: card_abstract, title: "CyberQuest", tagline: "Race Against Time, Conquer the Treasure!", team_size: "2 - 3", slug: "cyberquest", type: "event" },
+    { img: card_abstract_two, title: "Aadukalam", tagline: "DSA Battlefield", team_size: 1, slug: "aadukalam", type: "event" },
     { img: card_abstract_three, title: "Database Design Duel", tagline: "Two Minds, One Database - Will Yours Lead the Way?", team_size: 2, slug: "database-duel-design", type: "event" },
     { img: card_abstract_four, title: "Flutter Frenzy", tagline: "Flutter Your Way to Innovation", team_size: 1, slug: "flutter-frenzy", type: "workshop" },
-    { img: card_abstract_five, title: "Web Wizard Relay", tagline: "Code. Collaborate. Create.", team_size: 1, slug: "web-wizard-relay", type: "event" },
-    { img: card_abstract_six, title: "Pixel Verse", tagline: "Please provide tagline", team_size: 1, slug: "pixel-verse", type: "non-tech" },
+    { img: card_abstract_five, title: "Web Wizard Relay", tagline: "Code. Collaborate. Create.", team_size: 2, slug: "web-wizard-relay", type: "event" },
+    { img: card_abstract_six, title: "Pixel Verse", tagline: "Frame the Moment, Capture the Future", team_size: 1, slug: "pixel-verse", type: "non-tech" },
     { img: card_abstract_seven, title: "Chamber of Secrets", tagline: "Time's Not Your Friend—But Your Mind Might Be!", team_size: 2, slug: "chamber-of-secrets", type: "non-tech" },
     { img: card_abstract_eight, title: "Pitch perfect", tagline: "Express Ideas, Inspire Minds", team_size: "3 - 5", slug: "pitch-perfect", type: "event" },
     { img: card_abstract, title: "Beyond the Screen: 3D Web Design Mastery", tagline: "From Concept to Creation: Shaping Brands of Tomorrow.", team_size: 1, slug: "beyond-the-screen", type: "workshop" },
@@ -32,7 +32,7 @@ export const eventData = {
         title: 'CyberQuest',
         tagline: "Race Against Time, Conquer the Treasure!",
         poster: poster8,
-        team_size: 3,
+        team_size: "2 - 3",
         contact: "Madhan",
         num: '9655221183',
         description: 'In this exciting treasure hunt, 30 teams race to solve clues, follow hidden paths, and find the final treasure. Teams log into a website, enter clues, and move to the next step. With only a few hints available, quick thinking and smart choices are important. The team that solves the most clues with the fewest hints wins. Get ready for a fun and challenging adventure!',
@@ -121,7 +121,7 @@ export const eventData = {
         img: 'card_abstract_two',
         title: 'Web Wizard Relay',
         tagline: "Code. Collaborate. Create.",
-        team_size: 1,
+        team_size: 2,
         poster: poster5,
         contact: "Jeffrin",
         num: '6383381719',
@@ -145,7 +145,7 @@ export const eventData = {
     'pixel-verse': {
         img: 'card_abstract_two',
         title: 'Pixel Verse',
-        tagline: 'Please provide tagline',
+        tagline: 'Frame the Moment, Capture the Future',
         team_size: 1,
         poster: poster7,
         contact: "Krithika",
