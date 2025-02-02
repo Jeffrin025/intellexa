@@ -42,7 +42,6 @@ export const Register = () => {
               </a>
             </div>
 
-            {/* Aadukalam Card */}
             <div className="flex flex-col items-center p-8 border border-white/20 rounded-xl backdrop-blur-sm hover:border-white/40 transition-all min-h-[250px] justify-between">
               <div className="text-center">
                 <h1 className="text-2xl md:text-3xl mb-6">Register for Aadukalam</h1>
