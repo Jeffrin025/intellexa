@@ -119,6 +119,9 @@ export const Events = () => {
             ))}
         </div>
       </motion.div>
+      <div>
+        Sponsors
+      </div>
     </div>
   )
 }

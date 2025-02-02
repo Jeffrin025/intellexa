@@ -13,8 +13,10 @@ export const Register = () => {
         <Navbar />
         <div className="flex items-center justify-center min-h-screen pt-16 md:pt-0">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl w-full px-6 sm:px-12 md:px-16 mt-[-64px]">
-            <div className="flex flex-col items-center p-8 border border-white/20 rounded-xl backdrop-blur-sm hover:border-white/40 transition-all">
-              <h1 className="text-2xl md:text-3xl mb-6">Register for Events</h1>
+            <div className="flex flex-col items-center p-8 border border-white/20 rounded-xl backdrop-blur-sm hover:border-white/40 transition-all min-h-[250px] justify-between">
+              <div className="text-center">
+                <h1 className="text-2xl md:text-3xl mb-6">Register for Events</h1>
+              </div>
               <a
                 className="w-full rounded-lg border border-white/60 px-5 py-3 font-extralight 
                           hover:bg-white/10 transition-all duration-300 text-center"
@@ -24,8 +26,12 @@ export const Register = () => {
               </a>
             </div>
 
-            <div className="flex flex-col items-center p-8 border border-white/20 rounded-xl backdrop-blur-sm hover:border-white/40 transition-all">
-              <h1 className="text-2xl md:text-3xl mb-6">Register for Workshops</h1>
+            {/* Workshops Card */}
+            <div className="flex flex-col items-center p-8 border border-white/20 rounded-xl backdrop-blur-sm hover:border-white/40 transition-all min-h-[250px] justify-between">
+              <div className="text-center">
+                <h1 className="text-2xl md:text-3xl mb-6">Register for Workshops</h1>
+                <span className="text-white/80">Only for REC students</span>
+              </div>
               <a
                 className="w-full rounded-lg border border-white/60 px-5 py-3 font-extralight 
                           hover:bg-white/10 transition-all duration-300 text-center"
@@ -35,13 +41,16 @@ export const Register = () => {
               </a>
             </div>
 
-            <div className="flex flex-col items-center p-8 border border-white/20 rounded-xl backdrop-blur-sm hover:border-white/40 transition-all">
-              <h1 className="text-2xl md:text-3xl mb-6">Register for Aadukalam</h1>
+            {/* Aadukalam Card */}
+            <div className="flex flex-col items-center p-8 border border-white/20 rounded-xl backdrop-blur-sm hover:border-white/40 transition-all min-h-[250px] justify-between">
+              <div className="text-center">
+                <h1 className="text-2xl md:text-3xl mb-6">Register for Aadukalam</h1>
+                <span className="text-white/80">Round 1</span>
+              </div>
               <a
                 className="w-full rounded-lg border border-white/60 px-5 py-3 font-extralight 
                           hover:bg-white/10 transition-all duration-300 text-center"
                 href="https://docs.google.com/forms/d/e/1FAIpQLSeNNTlLXmC22xN2pw9NfpekbSi8Z4NF-siKnyaYxUkpTCb8dQ/viewform?usp=dialog"
-
               >
                 Register Now
               </a>
