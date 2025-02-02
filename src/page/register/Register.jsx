@@ -11,7 +11,7 @@ export const Register = () => {
       <BG />
       <div className="relative p-6 sm:p-12 md:p-16 font-bazingaItalic min-h-screen w-screen flex flex-col items-center justify-center pb-40 text-white">
         <Navbar />
-        <div className="flex items-center justify-center min-h-screen pt-16 md:pt-0">
+        <div className="flex items-center justify-center min-h-screen mt-32 md:pt-0">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl w-full px-6 sm:px-12 md:px-16 mt-[-64px]">
             <div className="flex flex-col items-center p-8 border border-white/20 rounded-xl backdrop-blur-sm hover:border-white/40 transition-all min-h-[250px] justify-between">
               <div className="text-center">
