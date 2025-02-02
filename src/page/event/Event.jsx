@@ -67,12 +67,6 @@ const Event = () => {
                     PPT FORMAT
                   </button>
                 ) : null}
-                <button
-                  onClick={() => console.log('Register')}
-                  className="text-lg md:text-xl font-bazingaItalic text-white border-2 border-white py-2 px-6 rounded-lg hover:border-red-500 transition-all"
-                >
-                  REGISTER
-                </button>
               </div>
             </div>
           </div>

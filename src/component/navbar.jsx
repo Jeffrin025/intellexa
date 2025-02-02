@@ -18,7 +18,7 @@ export function Navbar() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="w-36 h-14 overflow-hidden">
+        <div className="md:w-36 md:h-14 w-24 h-10 overflow-hidden flex items-center">
           <img src={intellexa_logo} alt="logo" />
         </div>
         <div className="flex space-x-2 items-center">
