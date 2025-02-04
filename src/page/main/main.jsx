@@ -2,6 +2,7 @@ import Home from '../home/Home'
 import About from '../../component/about'
 import { Events } from '../../component/events'
 import { Footer } from '../../component/footer'
+import FAQ from '../faq/faq'
 
 function Main() {
 
@@ -10,6 +11,7 @@ function Main() {
       <Home />
       <About />
       <Events />
+      <FAQ/>
       <Footer />
     </div>
   )
