@@ -31,7 +31,7 @@ export const Register = () => {
               <div className="text-center">
                 <h1 className="text-2xl md:text-3xl mb-6">Register for Workshops</h1>
                 <span className="text-white/80">Only for REC students</span><br />
-                <span className="text-white/80">Registration opens from Feb 9</span>
+                <span className="text-white/80">Registration opens from Feb 10</span>
               </div>
               <a
                 className="w-full rounded-lg border border-white/60 px-5 py-3 font-extralight 
