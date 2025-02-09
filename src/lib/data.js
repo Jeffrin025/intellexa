@@ -129,7 +129,7 @@ export const eventData = {
         description: 'The web relay is a dynamic 3-hour coding event where teams of two collaboratively build a website based on a given theme. Each team member alternates coding every 30 minutes, with only 10 minutes allowed for initial discussion. Communication during the competition is strictly through code comments',
         rules: [
             'Teams must consist of 2 members.',
-            'The event duration is 1.5 hours, with 10 minutes allocated for discussion.',
+            'The event duration is 2 hours, with 10 minutes allocated for discussion.',
             'Participants will swap coding roles every 30 minutes.',
             'Communication is allowed only through code comments.',
             'The theme will be provided on the event day.',
